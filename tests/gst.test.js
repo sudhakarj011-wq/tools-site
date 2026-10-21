@@ -1,0 +1,11 @@
+const assert = require('assert');
+const { calcGST } = require('../tools/gst-calculator.js');
+let n = 0; const t = (name, fn) => { fn(); n++; console.log('  ok  ' + name); };
+const eq = (a, b) => assert.ok(Math.abs(a - b) < 1e-9, `${a} != ${b}`);
+t('add 18% on 1000', () => { const r = calcGST(1000, 18, 'exclusive'); eq(r.gst, 180); eq(r.total, 1180); eq(r.cgst, 90); eq(r.sgst, 90); eq(r.igst, 180); });
+t('add 5% on 2500', () => { const r = calcGST(2500, 5, 'exclusive'); eq(r.gst, 125); eq(r.total, 2625); });
+t('remove 18% from 1180', () => { const r = calcGST(1180, 18, 'inclusive'); eq(r.base, 1000); eq(r.gst, 180); });
+t('remove 12% from 5600', () => { const r = calcGST(5600, 12, 'inclusive'); eq(r.base, 5000); eq(r.gst, 600); });
+t('zero amount is valid', () => eq(calcGST(0, 18, 'exclusive').total, 0));
+t('invalid inputs return null', () => [['abc', 18], [-1, 18], [100, -5], [NaN, 18], ['', 18], ['  ', 18], [100, ''], [null, 18]].forEach(a => assert.strictEqual(calcGST(a[0], a[1], 'exclusive'), null)));
+console.log(`GST: ${n} tests passed`);

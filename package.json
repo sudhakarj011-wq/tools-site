@@ -1,0 +1,12 @@
+{
+  "name": "toolswebsite",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static tools website. No dependencies.",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "new-tool": "node scripts/new-tool.js",
+    "test": "node tests/run.js",
+    "serve": "python3 -m http.server 8000"
+  }
+}

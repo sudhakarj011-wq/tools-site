@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en" data-root="../" class="show-ad-placeholders">
+<head>
+<!--@head-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#B45309">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://toolswebsite.in/tools/compound-interest.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolsWebsite">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Compound Interest Calculator: Final Amount (Free)">
+<meta property="og:description" content="Free compound interest calculator. Enter the principal, rate, time and compounding (yearly to daily) to see the final amount, interest and growth by year.">
+<meta property="og:url" content="https://toolswebsite.in/tools/compound-interest.html">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="../core/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../core/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../core/design-system.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Compound Interest Calculator","url":"https://toolswebsite.in/tools/compound-interest.html","description":"Free compound interest calculator. Enter the principal, rate, time and compounding (yearly to daily) to see the final amount, interest and growth by year.","applicationCategory":"FinanceApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"dateModified":"2026-10-20","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between simple and compound interest?","acceptedAnswer":{"@type":"Answer","text":"Simple interest is calculated only on the original principal. Compound interest is calculated on the principal plus the interest already earned, so it grows faster over time."}},{"@type":"Question","name":"Which compounding frequency should I choose?","acceptedAnswer":{"@type":"Answer","text":"Use the one your bank, scheme or lender states. Most Indian bank FDs compound quarterly and many loans compound monthly."}},{"@type":"Question","name":"What is the effective annual rate?","acceptedAnswer":{"@type":"Answer","text":"It is the rate that, compounded once a year, would give the same result as your stated rate with more frequent compounding. For example, 10% compounded monthly is an effective 10.47% a year."}},{"@type":"Question","name":"How long does it take to double my money?","acceptedAnswer":{"@type":"Answer","text":"Divide 72 by the yearly rate for a quick estimate. At 6% it takes about 12 years, at 8% about 9 years and at 12% about 6 years."}},{"@type":"Question","name":"Does this calculator include regular monthly deposits?","acceptedAnswer":{"@type":"Answer","text":"No. It assumes a single deposit that stays untouched. For regular deposits use the SIP Calculator, and for a bank deposit with its own terms use the FD Calculator."}},{"@type":"Question","name":"Is my data sent to a server?","acceptedAnswer":{"@type":"Answer","text":"No. This tool runs entirely in your browser. What you enter is never uploaded or stored."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toolswebsite.in/"},{"@type":"ListItem","position":2,"name":"Finance","item":"https://toolswebsite.in/category/finance.html"},{"@type":"ListItem","position":3,"name":"Compound Interest Calculator","item":"https://toolswebsite.in/tools/compound-interest.html"}]}</script>
+<!--/@head-->
+<title>Compound Interest Calculator: Final Amount (Free)</title>
+<meta name="description" content="Free compound interest calculator. Enter the principal, rate, time and compounding (yearly to daily) to see the final amount, interest and growth by year.">
+</head>
+<body>
+<!--@header--><header class="site-header"><div class="wrap"><a class="logo" href="../index.html">Tools<span>Website</span></a><nav class="site-nav" aria-label="Main"><a href="../index.html#all-tools">All Tools</a><a href="../index.html#all-tools" data-cat="pdf-image" class="hide-sm">PDF &amp; Image</a><a href="../category/finance.html" class="active" aria-current="page">Finance</a><a href="../index.html#all-tools" data-cat="dev" class="hide-sm">Dev Tools</a></nav></div></header><!--/@header-->
+
+  <div class="wrap layout">
+    <aside class="rail rail-left"><!--@rail left--><div class="rail-sticky" aria-label="Advertisement"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box sky"><span>Ad slot</span><span>160 × 600</span></div></div></div><!--/@rail--></aside>
+
+    <main>
+    <!--@crumbs--><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../category/finance.html">Finance</a> › Compound Interest Calculator</nav><!--/@crumbs-->
+
+    <header class="tool-head">
+      <h1>Compound Interest Calculator</h1>
+      <p class="lede">Free compound interest calculator. Enter the principal, rate, time and compounding (yearly to daily) to see the final amount, interest and growth by year.</p>
+    </header>
+
+    <!-- ── Tool widget ── -->
+    <section class="widget" aria-label="Compound interest calculator">
+      <div class="field" id="amount-wrap">
+        <label for="amount">Principal amount (₹)</label>
+        <input id="amount" type="number" inputmode="decimal" min="1" step="any" value="100000">
+        <span class="field-note" id="amount-words" aria-live="polite"></span>
+        <input id="amount-r" class="range" type="range" min="10000" max="10000000" step="10000" value="100000" aria-label="Principal slider">
+      </div>
+      <div class="row">
+        <div class="field" id="rate-wrap">
+          <label for="rate">Interest rate (% per year)</label>
+          <input id="rate" type="number" inputmode="decimal" min="0" max="100" step="0.05" value="10">
+          <input id="rate-r" class="range" type="range" min="1" max="30" step="0.5" value="10" aria-label="Interest rate slider">
+        </div>
+        <div class="field" id="tenure-wrap">
+          <label for="tenure" id="tenure-l">Time period (years)</label>
+          <input id="tenure" type="number" inputmode="numeric" min="1" step="1" value="5">
+          <input id="tenure-r" class="range" type="range" min="1" max="30" step="1" value="5" aria-label="Time period slider">
+        </div>
+      </div>
+      <div class="field" id="unit-wrap">
+        <span class="label" id="unit-l">Period unit</span>
+        <div class="seg" id="unit" role="group" aria-labelledby="unit-l">
+          <button type="button" data-v="years" aria-pressed="true">Years</button>
+          <button type="button" data-v="months" aria-pressed="false">Months</button>
+        </div>
+      </div>
+      <div class="field" id="comp-wrap">
+        <span class="label" id="comp-l">Interest compounded</span>
+        <div class="seg" id="comp" role="group" aria-labelledby="comp-l">
+          <button type="button" data-v="1" aria-pressed="false">Yearly</button>
+          <button type="button" data-v="2" aria-pressed="false">Half-yearly</button>
+          <button type="button" data-v="4" aria-pressed="false">Quarterly</button>
+          <button type="button" data-v="12" aria-pressed="true">Monthly</button>
+          <button type="button" data-v="365" aria-pressed="false">Daily</button>
+        </div>
+      </div>
+      <p class="hint" id="hint" role="alert" hidden>Enter a principal, a rate up to 100% and a whole-number time period of up to 50 years (600 months).</p>
+      <div class="result" id="out" aria-live="polite" hidden></div>
+      <div class="widget-foot">
+        <p class="privacy-note">Calculated in your browser. Nothing you type is uploaded.</p>
+        <button type="button" class="btn btn-ghost" id="copy">Copy result</button>
+      </div>
+    </section>
+
+    <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+    <article class="article">
+      <h2>What is compound interest?</h2>
+      <p>Compound interest is interest on interest. In the first period you earn interest on your principal. From then on, you earn interest on the principal <em>and</em> on the interest already added. Because the base keeps growing, the amount grows faster every period, not at a steady pace.</p>
+      <p>This compound interest calculator shows the result in seconds. Enter the principal, the yearly rate, the time and how often the interest is compounded, and it gives the final amount, the interest earned, how much more you earned than with simple interest, and the effective annual rate.</p>
+
+      <h2>How to use this compound interest calculator</h2>
+      <h3>Step 1: Enter the principal and the rate</h3>
+      <p>Type the amount you start with and the yearly interest rate, or drag the sliders. The words under the amount, such as "1 Lakh", help you catch a missing zero.</p>
+      <figure class="shot">
+        <img src="img/compound-interest-step1.webp" width="732" height="1007" loading="lazy" alt="Compound interest calculator with principal and interest rate highlighted">
+        <figcaption>Enter the principal and the yearly interest rate.</figcaption>
+      </figure>
+      <h3>Step 2: Set the time and how often interest is added</h3>
+      <p>Enter the time in years or switch to months. Then choose how often the interest is compounded: yearly, half-yearly, quarterly, monthly or daily. If you are not sure, use the compounding your bank or scheme states.</p>
+      <figure class="shot">
+        <img src="img/compound-interest-step2.webp" width="732" height="1007" loading="lazy" alt="Compound interest calculator with time period, unit and compounding options highlighted">
+        <figcaption>Choose the time period and the compounding frequency.</figcaption>
+      </figure>
+      <h3>Step 3: Read the result</h3>
+      <p>You see the final amount, the compound interest, the interest simple interest would have given, and the extra you gain from compounding. The effective annual rate shows what the rate really works out to over one year.</p>
+      <figure class="shot">
+        <img src="img/compound-interest-step3.webp" width="732" height="1007" loading="lazy" alt="Compound interest calculator result showing final amount, interest and effective annual rate">
+        <figcaption>The result with a simple interest comparison.</figcaption>
+      </figure>
+      <h3>Step 4: See the growth year by year</h3>
+      <p>Open <strong>Show year-by-year growth</strong> to see the amount at the end of every year. Use <strong>Copy result</strong> to save a one-line summary.</p>
+      <figure class="shot">
+        <img src="img/compound-interest-step4.webp" width="732" height="1243" loading="lazy" alt="Compound interest calculator year-by-year growth table opened">
+        <figcaption>The yearly table shows the growth speeding up.</figcaption>
+      </figure>
+
+      <h2>Compound interest formula</h2>
+      <div class="formula">A = P × (1 + r ÷ (100 × n)) ^ (n × t)</div>
+      <p>Here <strong>A</strong> is the final amount, <strong>P</strong> the principal, <strong>r</strong> the yearly rate in percent, <strong>n</strong> the number of times interest is compounded in a year (1, 2, 4, 12 or 365) and <strong>t</strong> the time in years. The compound interest is A minus P. Simple interest, for comparison, is P × r × t ÷ 100.</p>
+
+      <h2>Worked examples</h2>
+      <table>
+        <thead><tr><th>Principal</th><th>Rate</th><th>Time</th><th>Compounding</th><th>Final amount</th></tr></thead>
+        <tbody>
+          <tr><td>₹1,00,000</td><td>10%</td><td>5 years</td><td>Yearly</td><td>₹1,61,051</td></tr>
+          <tr><td>₹50,000</td><td>8%</td><td>3 years</td><td>Quarterly</td><td>₹63,412</td></tr>
+          <tr><td>₹5,00,000</td><td>9%</td><td>10 years</td><td>Yearly</td><td>₹11,83,682</td></tr>
+          <tr><td>₹1,00,000</td><td>12%</td><td>10 years</td><td>Monthly</td><td>₹3,30,039</td></tr>
+          <tr><td>₹2,50,000</td><td>7.5%</td><td>25 years</td><td>Monthly</td><td>₹16,20,720</td></tr>
+        </tbody>
+      </table>
+
+      <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+      <h2>How compounding frequency changes the result</h2>
+      <p>The more often interest is added, the more you earn, but the gain is smaller than most people expect. Here is ₹1,00,000 at 10% for 5 years:</p>
+      <table>
+        <thead><tr><th>Compounded</th><th>Final amount</th><th>Effective annual rate</th></tr></thead>
+        <tbody>
+          <tr><td>Yearly</td><td>₹1,61,051</td><td>10.00%</td></tr>
+          <tr><td>Half-yearly</td><td>₹1,62,889</td><td>10.25%</td></tr>
+          <tr><td>Quarterly</td><td>₹1,63,862</td><td>10.38%</td></tr>
+          <tr><td>Monthly</td><td>₹1,64,531</td><td>10.47%</td></tr>
+          <tr><td>Daily</td><td>₹1,64,861</td><td>10.52%</td></tr>
+        </tbody>
+      </table>
+      <p>Going from yearly to daily adds about ₹3,800 over five years. Time matters far more than frequency.</p>
+
+      <h2>Why time matters so much</h2>
+      <p>Compare ₹1,00,000 at 10% compounded yearly with the same money earning simple interest:</p>
+      <table>
+        <thead><tr><th>Years</th><th>Simple interest total</th><th>Compound interest total</th></tr></thead>
+        <tbody>
+          <tr><td>5</td><td>₹1,50,000</td><td>₹1,61,051</td></tr>
+          <tr><td>10</td><td>₹2,00,000</td><td>₹2,59,374</td></tr>
+          <tr><td>20</td><td>₹3,00,000</td><td>₹6,72,750</td></tr>
+          <tr><td>30</td><td>₹4,00,000</td><td>₹17,44,940</td></tr>
+        </tbody>
+      </table>
+      <p>After 5 years the gap is small. After 30 years the compound total is more than four times the simple interest total. A handy shortcut is the rule of 72: divide 72 by the yearly rate to estimate the years to double your money. At 8% that is about 9 years, and the exact figure is 9.006 years.</p>
+      <p>The same maths works against you on loans and credit card dues, where unpaid interest is added to the balance and then charged interest again.</p>
+
+      <h2>Frequently asked questions</h2>
+      <details class="faq"><summary>What is the difference between simple and compound interest?</summary>
+        <p>Simple interest is calculated only on the original principal. Compound interest is calculated on the principal plus the interest already earned, so it grows faster over time.</p></details>
+      <details class="faq"><summary>Which compounding frequency should I choose?</summary>
+        <p>Use the one your bank, scheme or lender states. Most Indian bank FDs compound quarterly and many loans compound monthly.</p></details>
+      <details class="faq"><summary>What is the effective annual rate?</summary>
+        <p>It is the rate that, compounded once a year, would give the same result as your stated rate with more frequent compounding. For example, 10% compounded monthly is an effective 10.47% a year.</p></details>
+      <details class="faq"><summary>How long does it take to double my money?</summary>
+        <p>Divide 72 by the yearly rate for a quick estimate. At 6% it takes about 12 years, at 8% about 9 years and at 12% about 6 years.</p></details>
+      <details class="faq"><summary>Does this calculator include regular monthly deposits?</summary>
+        <p>No. It assumes a single deposit that stays untouched. For regular deposits use the SIP Calculator, and for a bank deposit with its own terms use the FD Calculator.</p></details>
+      <details class="faq"><summary>Is my data sent to a server?</summary>
+        <p>No. This tool runs entirely in your browser. What you enter is never uploaded or stored.</p></details>
+
+      <p class="privacy-note"><strong>Disclaimer:</strong> This tool gives estimates for convenience and is not financial, tax or legal advice. Real products may round interest, change rates or charge tax. See our <a href="../disclaimer.html">disclaimer</a>.</p>
+    </article>
+
+    <!--@related--><section class="related-wrap"><h2 class="section-title">Related tools</h2><div class="related"><a class="tool-card" href="../tools/gst-calculator.html"><span class="ic">💸</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>GST Calculator</h3><p>Calculate GST (5%, 12%, 18%, 28%) on any amount instantly. Inclusive &amp; exclusive.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/emi-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>EMI Calculator</h3><p>Calculate monthly EMI for home loan, car loan, or personal loan with amortisation.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/income-tax-calculator.html"><span class="ic">📋</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Income Tax Calculator</h3><p>Compare income tax under the old and new regime for FY 2026-27 and see which saves more.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/sip-calculator.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>SIP Calculator</h3><p>Calculate returns on your Systematic Investment Plan (SIP). CAGR &amp; wealth gain.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/ppf-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>PPF Calculator</h3><p>Calculate Public Provident Fund maturity amount with compounding interest.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/fd-calculator.html"><span class="ic">🏧</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>FD Calculator</h3><p>Calculate maturity amount and interest earned on Fixed Deposits.</p><span class="go">Open tool →</span></a></div></section><!--/@related-->
+    </main>
+
+    <aside class="rail rail-right"><!--@rail right--><div class="rail-inner"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box rect"><span>Ad slot</span><span>300 × 250</span></div></div><section class="rail-card"><h2>Popular tools</h2><ol><li><a href="../tools/gst-calculator.html"><span>GST Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/emi-calculator.html"><span>EMI Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/income-tax-calculator.html"><span>Income Tax Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/sip-calculator.html"><span>SIP Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/ppf-calculator.html"><span>PPF Calculator</span><span aria-hidden="true">→</span></a></li></ol></section><div class="rail-sticky"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box tall"><span>Ad slot</span><span>300 × 600</span></div></div></div></div><!--/@rail--></aside>
+  </div>
+
+<!--@footer--><footer class="site-footer"><div class="wrap"><div><strong>ToolsWebsite</strong><br>Free tools that run in your browser. Your files never leave your device.</div><nav aria-label="Categories"><a href="../category/finance.html">Finance</a></nav><nav aria-label="Company"><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav><nav aria-label="Legal"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../disclaimer.html">Disclaimer</a></nav></div></footer><!--/@footer-->
+
+  <script src="compound-interest.js" defer></script>
+</body>
+</html>

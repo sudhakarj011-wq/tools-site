@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en" data-root="../" class="show-ad-placeholders">
+<head>
+<!--@head-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#B45309">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://toolswebsite.in/tools/ppf-calculator.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolsWebsite">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="PPF Calculator: Maturity Amount &amp; Interest (Free)">
+<meta property="og:description" content="Free PPF calculator for India. Enter your yearly or monthly deposit, interest rate and 15 to 50 years to see the maturity value and tax-free interest.">
+<meta property="og:url" content="https://toolswebsite.in/tools/ppf-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="../core/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../core/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../core/design-system.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"PPF Calculator","url":"https://toolswebsite.in/tools/ppf-calculator.html","description":"Free PPF calculator for India. Enter your yearly or monthly deposit, interest rate and 15 to 50 years to see the maturity value and tax-free interest.","applicationCategory":"FinanceApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"dateModified":"2026-10-20","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the current PPF interest rate?","acceptedAnswer":{"@type":"Answer","text":"It is 7.1% a year for October to December 2026, unchanged from the previous quarter. The government reviews it every quarter, so check the latest rate before you plan."}},{"@type":"Question","name":"Is the PPF maturity amount taxable?","acceptedAnswer":{"@type":"Answer","text":"No. The interest you earn and the amount you get at maturity are tax-free. Deposits up to ₹1.5 lakh a year can be claimed under Section 80C if you use the old tax regime."}},{"@type":"Question","name":"What is the best time of the year to deposit in PPF?","acceptedAnswer":{"@type":"Answer","text":"As early as possible, by the 5th of April. Interest is calculated on the lowest balance between the 5th and month end, so a deposit made by the 5th of April earns interest for all 12 months of the year."}},{"@type":"Question","name":"Can I deposit more than ₹1.5 lakh in a year?","acceptedAnswer":{"@type":"Answer","text":"No. The limit is ₹1,50,000 per financial year, counted together across your own account and any minor's account you operate. Anything above that earns no interest and is returned."}},{"@type":"Question","name":"What happens when my PPF account matures after 15 years?","acceptedAnswer":{"@type":"Answer","text":"You can close it and withdraw everything, keep it open without new deposits so it still earns interest, or extend it with deposits in blocks of 5 years. To extend with deposits you must apply within one year of maturity."}},{"@type":"Question","name":"Is my data sent to a server?","acceptedAnswer":{"@type":"Answer","text":"No. This tool runs entirely in your browser. What you enter is never uploaded or stored."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toolswebsite.in/"},{"@type":"ListItem","position":2,"name":"Finance","item":"https://toolswebsite.in/category/finance.html"},{"@type":"ListItem","position":3,"name":"PPF Calculator","item":"https://toolswebsite.in/tools/ppf-calculator.html"}]}</script>
+<!--/@head-->
+<title>PPF Calculator: Maturity Amount &amp; Interest (Free)</title>
+<meta name="description" content="Free PPF calculator for India. Enter your yearly or monthly deposit, interest rate and 15 to 50 years to see the maturity value and tax-free interest.">
+</head>
+<body>
+<!--@header--><header class="site-header"><div class="wrap"><a class="logo" href="../index.html">Tools<span>Website</span></a><nav class="site-nav" aria-label="Main"><a href="../index.html#all-tools">All Tools</a><a href="../index.html#all-tools" data-cat="pdf-image" class="hide-sm">PDF &amp; Image</a><a href="../category/finance.html" class="active" aria-current="page">Finance</a><a href="../index.html#all-tools" data-cat="dev" class="hide-sm">Dev Tools</a></nav></div></header><!--/@header-->
+
+  <div class="wrap layout">
+    <aside class="rail rail-left"><!--@rail left--><div class="rail-sticky" aria-label="Advertisement"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box sky"><span>Ad slot</span><span>160 × 600</span></div></div></div><!--/@rail--></aside>
+
+    <main>
+    <!--@crumbs--><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../category/finance.html">Finance</a> › PPF Calculator</nav><!--/@crumbs-->
+
+    <header class="tool-head">
+      <h1>PPF Calculator</h1>
+      <p class="lede">Free PPF calculator for India. Enter your yearly or monthly deposit, interest rate and 15 to 50 years to see the maturity value and tax-free interest.</p>
+    </header>
+
+    <!-- ── Tool widget ── -->
+    <section class="widget" aria-label="PPF calculator">
+      <div class="field" id="mode-wrap">
+        <span class="label" id="mode-l">How do you deposit?</span>
+        <div class="seg" id="mode" role="group" aria-labelledby="mode-l">
+          <button type="button" data-v="yearly" aria-pressed="true">Once a year</button>
+          <button type="button" data-v="monthly" aria-pressed="false">Every month</button>
+        </div>
+      </div>
+      <div class="field" id="amount-wrap">
+        <label for="amount" id="amount-l">Deposit per year (₹)</label>
+        <input id="amount" type="number" inputmode="decimal" min="500" max="150000" step="any" value="150000">
+        <span class="field-note" id="amount-words" aria-live="polite"></span>
+        <input id="amount-r" class="range" type="range" min="5000" max="150000" step="5000" value="150000" aria-label="Deposit amount slider">
+      </div>
+      <div class="row">
+        <div class="field" id="rate-wrap">
+          <label for="rate">Interest rate (% per year)</label>
+          <input id="rate" type="number" inputmode="decimal" min="0" max="15" step="0.1" value="7.1">
+          <input id="rate-r" class="range" type="range" min="5" max="10" step="0.1" value="7.1" aria-label="Interest rate slider">
+        </div>
+        <div class="field" id="tenure-wrap">
+          <label for="tenure" id="tenure-l">Account life (years)</label>
+          <input id="tenure" type="number" inputmode="numeric" min="15" max="50" step="5" value="15">
+          <input id="tenure-r" class="range" type="range" min="15" max="50" step="5" value="15" aria-label="Account life slider">
+        </div>
+      </div>
+      <p class="hint" id="hint" role="alert" hidden>Enter a deposit of ₹500 to ₹1,50,000 a year (₹12,500 a month at most), a rate up to 15% and an account life of 15, 20, 25 ... up to 50 years.</p>
+      <div class="result" id="out" aria-live="polite" hidden></div>
+      <div class="widget-foot">
+        <p class="privacy-note">Calculated in your browser. Nothing you type is uploaded.</p>
+        <button type="button" class="btn btn-ghost" id="copy">Copy result</button>
+      </div>
+    </section>
+
+    <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+    <article class="article">
+      <h2>What is a PPF calculator?</h2>
+      <p>The Public Provident Fund (PPF) is a government-backed savings scheme in India. You put money in for at least 15 years, the government sets an interest rate, and both the interest and the final amount are tax-free. People use it for retirement, a child's education or simply a safe, long-term nest egg.</p>
+      <p>Working out what a PPF account will be worth is harder than it looks, because interest is calculated every month but added to your balance only once a year, and the date you deposit matters. This PPF calculator does that work for you. Enter what you plan to deposit, the interest rate and how many years you will keep the account, and it shows the maturity value, the interest you earn and the balance at the end of every year.</p>
+
+      <h2>How to use this PPF calculator</h2>
+      <p>It takes four quick steps and no sign-up.</p>
+      <h3>Step 1: Choose how you deposit and how much</h3>
+      <p>Pick <strong>Once a year</strong> if you put the full amount in at the start of the financial year, or <strong>Every month</strong> if you deposit a fixed instalment each month. Then enter the amount. The yearly limit is ₹1,50,000, so the monthly limit is ₹12,500. You can type the amount or drag the slider.</p>
+      <figure class="shot">
+        <img src="img/ppf-calculator-step1.webp" width="732" height="813" loading="lazy" alt="PPF calculator with the deposit type and deposit amount highlighted">
+        <figcaption>Choose the deposit type and enter the amount.</figcaption>
+      </figure>
+      <h3>Step 2: Set the interest rate and account life</h3>
+      <p>The rate is already filled in with the current PPF rate of 7.1%. Change it if the government revises it or if you want to test another figure. The account life starts at 15 years, the minimum lock-in, and goes up in 5-year steps to 50 years.</p>
+      <figure class="shot">
+        <img src="img/ppf-calculator-step2.webp" width="732" height="813" loading="lazy" alt="PPF calculator with the interest rate and account life highlighted">
+        <figcaption>Set the interest rate and how many years you will keep the account.</figcaption>
+      </figure>
+      <h3>Step 3: Read the result</h3>
+      <p>The result updates as you type. You see the maturity value, the total you invested and the interest you earned. The bar shows how much of the final amount is your own money and how much is interest.</p>
+      <figure class="shot">
+        <img src="img/ppf-calculator-step3.webp" width="732" height="813" loading="lazy" alt="PPF calculator result showing maturity value, total invested and interest earned">
+        <figcaption>Maturity value, total invested and interest earned.</figcaption>
+      </figure>
+      <h3>Step 4: Check the year-by-year balance</h3>
+      <p>Open <strong>Show year-by-year balance</strong> to see what you deposit, what interest is added and what the balance is at the end of each year. Use <strong>Copy result</strong> to save a one-line summary.</p>
+      <figure class="shot">
+        <img src="img/ppf-calculator-step4.webp" width="732" height="1153" loading="lazy" alt="PPF calculator year-by-year balance table opened">
+        <figcaption>The year-by-year table shows how interest builds up.</figcaption>
+      </figure>
+
+      <h2>How PPF interest works</h2>
+      <p>Three rules decide how much you earn:</p>
+      <ul>
+        <li>Interest is worked out every month on the <strong>lowest balance between the 5th and the last day of that month</strong>. Money deposited by the 5th earns interest for that month.</li>
+        <li>The interest is added to your account once a year, at the end of March. That is when it starts earning interest itself.</li>
+        <li>The rate is set by the government and reviewed every quarter. This page uses 7.1%, the rate announced for October to December 2026. Check the latest rate before you decide anything.</li>
+      </ul>
+      <p>If you deposit the full year's amount by 5 April, every one of the 12 months earns interest, so the yearly formula is simple:</p>
+      <div class="formula">Balance at year end = (previous balance + deposit) × (1 + rate ÷ 100)</div>
+      <p>With monthly deposits, each instalment earns interest only for the months it has been in the account, so the calculator adds the interest month by month and credits it at year end.</p>
+
+      <h2>Worked examples</h2>
+      <p>All figures assume 7.1% for the whole period and deposits made by the 5th.</p>
+      <table>
+        <thead><tr><th>Deposit</th><th>Years</th><th>You invest</th><th>Maturity value</th></tr></thead>
+        <tbody>
+          <tr><td>₹50,000 a year</td><td>15</td><td>₹7,50,000</td><td>₹13,56,070</td></tr>
+          <tr><td>₹1,00,000 a year</td><td>15</td><td>₹15,00,000</td><td>₹27,12,139</td></tr>
+          <tr><td>₹1,50,000 a year</td><td>15</td><td>₹22,50,000</td><td>₹40,68,209</td></tr>
+          <tr><td>₹1,50,000 a year</td><td>20</td><td>₹30,00,000</td><td>₹66,58,288</td></tr>
+          <tr><td>₹1,50,000 a year</td><td>25</td><td>₹37,50,000</td><td>₹1,03,08,015</td></tr>
+          <tr><td>₹12,500 a month</td><td>15</td><td>₹22,50,000</td><td>₹39,44,599</td></tr>
+        </tbody>
+      </table>
+      <p>Look at the last two rows of the 15-year results. The same ₹22,50,000 gives ₹40,68,209 when deposited once a year but ₹39,44,599 when deposited monthly, a difference of about ₹1.24 lakh. The yearly deposit wins because the money works for all 12 months from the first day of the year.</p>
+
+      <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+      <h2>Why time matters more than the amount</h2>
+      <p>PPF rewards patience. With ₹1,50,000 a year, the balance is ₹9.26 lakh after 5 years and ₹22.30 lakh after 10 years, but ₹40.68 lakh after 15. In year 15 alone the account earns about ₹2.70 lakh in interest, which is more than the ₹1.5 lakh you deposit that year. Extending from 15 to 20 years nearly adds ₹26 lakh, from a further ₹7.5 lakh of deposits. That is the compounding effect, and it is why stopping early costs so much.</p>
+
+      <h2>PPF rules at a glance</h2>
+      <table>
+        <thead><tr><th>Rule</th><th>Detail</th></tr></thead>
+        <tbody>
+          <tr><td>Yearly deposit</td><td>₹500 minimum, ₹1,50,000 maximum per financial year, in multiples of ₹50</td></tr>
+          <tr><td>Lock-in</td><td>15 financial years from the end of the year you opened the account</td></tr>
+          <tr><td>After 15 years</td><td>Close it, keep it without new deposits, or extend with deposits in 5-year blocks</td></tr>
+          <tr><td>Partial withdrawal</td><td>Allowed from the 7th financial year, once a year, up to 50% of an earlier balance</td></tr>
+          <tr><td>Tax</td><td>Interest and maturity amount are tax-free; deposits qualify under Section 80C in the old tax regime</td></tr>
+        </tbody>
+      </table>
+      <p>Rules and rates change, so confirm the details with your bank or post office before you invest. This calculator does not model withdrawals or changes in the rate.</p>
+
+      <h2>Frequently asked questions</h2>
+      <details class="faq"><summary>What is the current PPF interest rate?</summary>
+        <p>It is 7.1% a year for October to December 2026, unchanged from the previous quarter. The government reviews it every quarter, so check the latest rate before you plan.</p></details>
+      <details class="faq"><summary>Is the PPF maturity amount taxable?</summary>
+        <p>No. The interest you earn and the amount you get at maturity are tax-free. Deposits up to ₹1.5 lakh a year can be claimed under Section 80C if you use the old tax regime.</p></details>
+      <details class="faq"><summary>What is the best time of the year to deposit in PPF?</summary>
+        <p>As early as possible, by the 5th of April. Interest is calculated on the lowest balance between the 5th and month end, so a deposit made by the 5th of April earns interest for all 12 months of the year.</p></details>
+      <details class="faq"><summary>Can I deposit more than ₹1.5 lakh in a year?</summary>
+        <p>No. The limit is ₹1,50,000 per financial year, counted together across your own account and any minor's account you operate. Anything above that earns no interest and is returned.</p></details>
+      <details class="faq"><summary>What happens when my PPF account matures after 15 years?</summary>
+        <p>You can close it and withdraw everything, keep it open without new deposits so it still earns interest, or extend it with deposits in blocks of 5 years. To extend with deposits you must apply within one year of maturity.</p></details>
+      <details class="faq"><summary>Is my data sent to a server?</summary>
+        <p>No. This tool runs entirely in your browser. What you enter is never uploaded or stored.</p></details>
+
+      <p class="privacy-note"><strong>Disclaimer:</strong> This tool gives estimates for convenience and is not financial, tax or legal advice. Actual interest is rounded by the bank or post office and the rate may change. See our <a href="../disclaimer.html">disclaimer</a>.</p>
+    </article>
+
+    <!--@related--><section class="related-wrap"><h2 class="section-title">Related tools</h2><div class="related"><a class="tool-card" href="../tools/gst-calculator.html"><span class="ic">💸</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>GST Calculator</h3><p>Calculate GST (5%, 12%, 18%, 28%) on any amount instantly. Inclusive &amp; exclusive.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/emi-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>EMI Calculator</h3><p>Calculate monthly EMI for home loan, car loan, or personal loan with amortisation.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/income-tax-calculator.html"><span class="ic">📋</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Income Tax Calculator</h3><p>Compare income tax under the old and new regime for FY 2026-27 and see which saves more.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/sip-calculator.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>SIP Calculator</h3><p>Calculate returns on your Systematic Investment Plan (SIP). CAGR &amp; wealth gain.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/fd-calculator.html"><span class="ic">🏧</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>FD Calculator</h3><p>Calculate maturity amount and interest earned on Fixed Deposits.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/compound-interest.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Compound Interest Calculator</h3><p>Calculate compound interest with different compounding frequencies.</p><span class="go">Open tool →</span></a></div></section><!--/@related-->
+    </main>
+
+    <aside class="rail rail-right"><!--@rail right--><div class="rail-inner"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box rect"><span>Ad slot</span><span>300 × 250</span></div></div><section class="rail-card"><h2>Popular tools</h2><ol><li><a href="../tools/gst-calculator.html"><span>GST Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/emi-calculator.html"><span>EMI Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/income-tax-calculator.html"><span>Income Tax Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/sip-calculator.html"><span>SIP Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/ppf-calculator.html"><span>PPF Calculator</span><span aria-hidden="true">→</span></a></li></ol></section><div class="rail-sticky"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box tall"><span>Ad slot</span><span>300 × 600</span></div></div></div></div><!--/@rail--></aside>
+  </div>
+
+<!--@footer--><footer class="site-footer"><div class="wrap"><div><strong>ToolsWebsite</strong><br>Free tools that run in your browser. Your files never leave your device.</div><nav aria-label="Categories"><a href="../category/finance.html">Finance</a></nav><nav aria-label="Company"><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav><nav aria-label="Legal"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../disclaimer.html">Disclaimer</a></nav></div></footer><!--/@footer-->
+
+  <script src="ppf-calculator.js" defer></script>
+</body>
+</html>

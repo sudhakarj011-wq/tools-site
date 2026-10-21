@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" data-root="../" class="show-ad-placeholders">
+<head>
+<!--@head-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#B45309">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://toolswebsite.in/tools/fd-calculator.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolsWebsite">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="FD Calculator: Fixed Deposit Maturity &amp; Interest (Free)">
+<meta property="og:description" content="Free FD calculator for India. Enter the deposit, interest rate, period and compounding to see the maturity amount, interest earned and yearly growth.">
+<meta property="og:url" content="https://toolswebsite.in/tools/fd-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="../core/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../core/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../core/design-system.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"FD Calculator","url":"https://toolswebsite.in/tools/fd-calculator.html","description":"Free FD calculator for India. Enter the deposit, interest rate, period and compounding to see the maturity amount, interest earned and yearly growth.","applicationCategory":"FinanceApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"dateModified":"2026-10-20","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is FD interest calculated?","acceptedAnswer":{"@type":"Answer","text":"For a cumulative FD, the maturity value is A = P × (1 + r ÷ (100 × m))^(m × t), where m is the number of compounding periods per year. For ₹1,00,000 at 7% for 5 years with quarterly compounding, A is ₹1,41,478."}},{"@type":"Question","name":"Does quarterly or monthly compounding give more?","acceptedAnswer":{"@type":"Answer","text":"Monthly compounding gives slightly more than quarterly at the same rate, because interest is added to the deposit more often. On ₹1,00,000 at 7% for 5 years, monthly compounding gives ₹1,41,763 and quarterly gives ₹1,41,478."}},{"@type":"Question","name":"What is the difference between a cumulative and a non-cumulative FD?","acceptedAnswer":{"@type":"Answer","text":"In a cumulative FD, interest is added to the deposit and paid at maturity. In a non-cumulative FD, interest is paid out at regular intervals and the principal stays the same. This calculator is for cumulative FDs."}},{"@type":"Question","name":"Is FD interest taxable?","acceptedAnswer":{"@type":"Answer","text":"Yes, FD interest is added to your income and taxed at your slab rate, and banks may deduct TDS in some cases. The figures here are before tax. Check the current rules or ask a tax adviser."}},{"@type":"Question","name":"Will my bank's maturity amount match this calculator exactly?","acceptedAnswer":{"@type":"Answer","text":"It should be very close. Banks may round at each step, use days instead of months for part periods, or follow their own compounding rules, so a small difference is normal. Your FD receipt shows the exact maturity amount."}},{"@type":"Question","name":"Is my data sent to a server?","acceptedAnswer":{"@type":"Answer","text":"No. This calculator runs entirely in your browser. The amounts you enter are never uploaded or stored."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toolswebsite.in/"},{"@type":"ListItem","position":2,"name":"Finance","item":"https://toolswebsite.in/category/finance.html"},{"@type":"ListItem","position":3,"name":"FD Calculator","item":"https://toolswebsite.in/tools/fd-calculator.html"}]}</script>
+<!--/@head-->
+<title>FD Calculator: Fixed Deposit Maturity &amp; Interest (Free)</title>
+<meta name="description" content="Free FD calculator for India. Enter the deposit, interest rate, period and compounding to see the maturity amount, interest earned and yearly growth.">
+</head>
+<body>
+<!--@header--><header class="site-header"><div class="wrap"><a class="logo" href="../index.html">Tools<span>Website</span></a><nav class="site-nav" aria-label="Main"><a href="../index.html#all-tools">All Tools</a><a href="../index.html#all-tools" data-cat="pdf-image" class="hide-sm">PDF &amp; Image</a><a href="../category/finance.html" class="active" aria-current="page">Finance</a><a href="../index.html#all-tools" data-cat="dev" class="hide-sm">Dev Tools</a></nav></div></header><!--/@header-->
+
+  <div class="wrap layout">
+    <aside class="rail rail-left"><!--@rail left--><div class="rail-sticky" aria-label="Advertisement"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box sky"><span>Ad slot</span><span>160 × 600</span></div></div></div><!--/@rail--></aside>
+
+    <main>
+    <!--@crumbs--><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../category/finance.html">Finance</a> › FD Calculator</nav><!--/@crumbs-->
+
+    <header class="tool-head">
+      <h1>FD Calculator</h1>
+      <p class="lede">Find out what a fixed deposit will be worth at maturity. Enter the amount, the interest rate, the period and how often interest is compounded.</p>
+    </header>
+
+    <!-- ── Tool widget (above the fold) ── -->
+    <section class="widget" aria-label="FD calculator">
+      <div class="field" id="amount-wrap">
+        <label for="amount">Deposit amount (₹)</label>
+        <input id="amount" type="number" inputmode="decimal" min="1" step="any" value="100000">
+        <span class="field-note" id="amount-words" aria-live="polite"></span>
+        <input id="amount-r" class="range" type="range" min="10000" max="10000000" step="10000" value="100000" aria-label="Deposit amount slider">
+      </div>
+      <div class="row">
+        <div class="field" id="rate-wrap">
+          <label for="rate">Interest rate (% per year)</label>
+          <input id="rate" type="number" inputmode="decimal" min="0" max="30" step="0.05" value="7">
+          <input id="rate-r" class="range" type="range" min="1" max="15" step="0.1" value="7" aria-label="Interest rate slider">
+        </div>
+        <div class="field" id="tenure-wrap">
+          <label for="tenure" id="tenure-l">Deposit period (years)</label>
+          <input id="tenure" type="number" inputmode="numeric" min="1" step="1" value="5">
+          <input id="tenure-r" class="range" type="range" min="1" max="10" step="1" value="5" aria-label="Deposit period slider">
+        </div>
+      </div>
+      <div class="field" id="unit-wrap">
+        <span class="label" id="unit-l">Period unit</span>
+        <div class="seg" id="unit" role="group" aria-labelledby="unit-l">
+          <button type="button" data-v="years" aria-pressed="true">Years</button>
+          <button type="button" data-v="months" aria-pressed="false">Months</button>
+        </div>
+      </div>
+      <div class="field" id="comp-wrap">
+        <span class="label" id="comp-l">Interest compounded</span>
+        <div class="seg" id="comp" role="group" aria-labelledby="comp-l">
+          <button type="button" data-v="1" aria-pressed="false">Yearly</button>
+          <button type="button" data-v="2" aria-pressed="false">Half-yearly</button>
+          <button type="button" data-v="4" aria-pressed="true">Quarterly</button>
+          <button type="button" data-v="12" aria-pressed="false">Monthly</button>
+        </div>
+      </div>
+      <p class="hint" id="hint" role="alert" hidden>Enter a deposit amount, a rate up to 30% and a whole-number period of up to 30 years (360 months).</p>
+      <div class="result" id="out" aria-live="polite" hidden></div>
+      <div class="widget-foot">
+        <p class="privacy-note">Calculated in your browser. Nothing you type is uploaded.</p>
+        <button type="button" class="btn btn-ghost" id="copy">Copy result</button>
+      </div>
+    </section>
+
+    <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+    <!-- ── Blog article ── -->
+    <article class="article">
+      <h2>What is a fixed deposit?</h2>
+      <p>A fixed deposit (FD) is a savings product offered by banks and some finance companies. You deposit a lump sum for a fixed period at an interest rate that is agreed on the day you open the FD. Because the rate is fixed, you know in advance what the deposit will earn, which is why FDs are popular with people who want predictable and low-risk returns.</p>
+      <p>FDs come in two common forms. In a <strong>cumulative FD</strong> the interest is added back to the deposit and paid together with the principal at maturity, so you earn interest on interest. In a <strong>non-cumulative FD</strong> the interest is paid out regularly, for example every month or quarter. This calculator is for cumulative FDs.</p>
+
+      <h2>How to use this FD calculator</h2>
+      <p>Four quick steps show the maturity value of your deposit. Each step below shows what you will see on the calculator above.</p>
+
+      <h3>Step 1: Enter the deposit amount and the interest rate</h3>
+      <p>Type the amount you plan to deposit, or drag the slider. The calculator writes it in thousands, lakhs or crores underneath so you can spot a wrong number of zeros. Then enter the yearly interest rate your bank offers for the period you have chosen. Rates differ by bank and by period, so use the rate quoted on the bank's website or at the branch.</p>
+      <figure class="shot">
+        <img src="img/fd-calculator-step1.webp" width="732" height="886" loading="lazy" alt="FD calculator with a deposit amount of 1,00,000 rupees and an interest rate of 7 percent highlighted">
+        <figcaption>₹1,00,000 at 7% a year.</figcaption>
+      </figure>
+
+      <h3>Step 2: Choose the period and how interest is compounded</h3>
+      <p>Enter the length of the deposit in years, or switch to <strong>Months</strong> for shorter FDs such as 18 months. Then choose how often interest is added to the deposit. Most banks compound quarterly, which is the default here. Your bank's FD terms will say if it is different.</p>
+      <figure class="shot">
+        <img src="img/fd-calculator-step2.webp" width="732" height="886" loading="lazy" alt="FD calculator with a deposit period of 5 years, the Years and Months toggle, and the Quarterly compounding option highlighted">
+        <figcaption>5 years with quarterly compounding.</figcaption>
+      </figure>
+
+      <h3>Step 3: Read the maturity value</h3>
+      <p>The maturity value appears at the top. Below it you can see your deposit and the interest earned. The coloured bar shows how much of the final amount is your own money and how much is interest. Use <strong>Copy result</strong> to paste the summary into a message or a spreadsheet.</p>
+      <figure class="shot">
+        <img src="img/fd-calculator-step3.webp" width="732" height="886" loading="lazy" alt="FD result showing maturity value 1,41,478 rupees, deposit 1,00,000 rupees and interest earned 41,478 rupees">
+        <figcaption>₹1,00,000 at 7% for 5 years, compounded quarterly, grows to about ₹1,41,478.</figcaption>
+      </figure>
+
+      <h3>Optional: see the growth year by year</h3>
+      <p>Select <strong>Show year-by-year growth</strong> to see the interest earned so far and the value of the FD at the end of each year. This helps if you want to know what the deposit is worth if you break it early or plan to renew it.</p>
+      <figure class="shot">
+        <img src="img/fd-calculator-step4.webp" width="732" height="1123" loading="lazy" alt="Year-by-year table showing interest earned so far and the value of the fixed deposit at the end of each year">
+        <figcaption>The yearly table: each year earns slightly more interest than the one before.</figcaption>
+      </figure>
+
+      <h2>FD maturity formula</h2>
+      <div class="formula">A = P × (1 + r ÷ (100 × m))<sup>m × t</sup></div>
+      <p>Here <strong>A</strong> is the maturity value, <strong>P</strong> is the deposit, <strong>r</strong> is the annual interest rate in percent, <strong>m</strong> is the number of times interest is compounded in a year (1, 2, 4 or 12) and <strong>t</strong> is the period in years. Interest earned is A − P.</p>
+      <p>Worked example: P = ₹1,00,000, r = 7%, quarterly compounding (m = 4) for 5 years (t = 5). Then A = 1,00,000 × (1 + 0.07 ÷ 4)<sup>20</sup> = 1,00,000 × 1.4148 = ₹1,41,478, so the interest is ₹41,478.</p>
+
+      <h2>FD examples</h2>
+      <table>
+        <thead><tr><th>Deposit</th><th>Rate</th><th>Period</th><th>Maturity value</th><th>Interest earned</th></tr></thead>
+        <tbody>
+          <tr><td>₹1,00,000</td><td>7%</td><td>5 years</td><td>₹1,41,478</td><td>₹41,478</td></tr>
+          <tr><td>₹5,00,000</td><td>7.5%</td><td>3 years</td><td>₹6,24,858</td><td>₹1,24,858</td></tr>
+          <tr><td>₹10,00,000</td><td>6.8%</td><td>2 years</td><td>₹11,44,373</td><td>₹1,44,373</td></tr>
+          <tr><td>₹2,00,000</td><td>7.25%</td><td>10 years</td><td>₹4,10,274</td><td>₹2,10,274</td></tr>
+        </tbody>
+      </table>
+      <p>All examples use quarterly compounding and sample rates. Actual rates change often and depend on the bank, the period and sometimes your age.</p>
+
+      <h2>How compounding changes the maturity value</h2>
+      <p>The more often interest is added, the more you earn, because interest starts earning interest sooner. The table uses ₹1,00,000 at 7% for 5 years.</p>
+      <table>
+        <thead><tr><th>Compounding</th><th>Maturity value</th></tr></thead>
+        <tbody>
+          <tr><td>Yearly</td><td>₹1,40,255</td></tr>
+          <tr><td>Half-yearly</td><td>₹1,41,060</td></tr>
+          <tr><td>Quarterly</td><td>₹1,41,478</td></tr>
+          <tr><td>Monthly</td><td>₹1,41,763</td></tr>
+        </tbody>
+      </table>
+      <p>The gap between yearly and monthly is about ₹1,500 on ₹1,00,000 over 5 years. It is small compared with the effect of the rate or the period, but it is worth checking when two banks offer the same rate.</p>
+
+      <h2>How the period changes your interest</h2>
+      <table>
+        <thead><tr><th>Period</th><th>Maturity value</th><th>Interest earned</th></tr></thead>
+        <tbody>
+          <tr><td>1 year</td><td>₹1,07,186</td><td>₹7,186</td></tr>
+          <tr><td>2 years</td><td>₹1,14,888</td><td>₹14,888</td></tr>
+          <tr><td>3 years</td><td>₹1,23,144</td><td>₹23,144</td></tr>
+          <tr><td>5 years</td><td>₹1,41,478</td><td>₹41,478</td></tr>
+          <tr><td>7 years</td><td>₹1,62,541</td><td>₹62,541</td></tr>
+          <tr><td>10 years</td><td>₹2,00,160</td><td>₹1,00,160</td></tr>
+        </tbody>
+      </table>
+      <p>This is ₹1,00,000 at 7%, compounded quarterly. Over 10 years the deposit doubles. The interest in the second five years (₹58,682) is higher than in the first five (₹41,478) because the interest earned earlier keeps earning too.</p>
+
+      <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+      <h2>Compound interest and simple interest</h2>
+      <p>With simple interest, you earn interest only on the original deposit. ₹1,00,000 at 7% for 5 years would give ₹35,000 of interest and a total of ₹1,35,000. With quarterly compounding the same FD gives ₹41,478, which is ₹6,478 more. Cumulative FDs use compound interest, so use a compound calculation like this one to estimate what you will receive.</p>
+      <p>Comparing options? A <a data-tool="sip-calculator" href="../tools/sip-calculator.html">SIP Calculator</a> shows how a market-linked investment could grow, the <a data-tool="ppf-calculator" href="../tools/ppf-calculator.html">PPF Calculator</a> covers a government-backed savings scheme, and the <a data-tool="income-tax-calculator" href="../tools/income-tax-calculator.html">Income Tax Calculator</a> helps you estimate tax on the interest.</p>
+
+      <h2>Frequently asked questions</h2>
+      <details class="faq"><summary>How is FD interest calculated?</summary>
+        <p>For a cumulative FD, the maturity value is A = P × (1 + r ÷ (100 × m))^(m × t), where m is the number of compounding periods per year. For ₹1,00,000 at 7% for 5 years with quarterly compounding, A is ₹1,41,478.</p></details>
+      <details class="faq"><summary>Does quarterly or monthly compounding give more?</summary>
+        <p>Monthly compounding gives slightly more than quarterly at the same rate, because interest is added to the deposit more often. On ₹1,00,000 at 7% for 5 years, monthly compounding gives ₹1,41,763 and quarterly gives ₹1,41,478.</p></details>
+      <details class="faq"><summary>What is the difference between a cumulative and a non-cumulative FD?</summary>
+        <p>In a cumulative FD, interest is added to the deposit and paid at maturity. In a non-cumulative FD, interest is paid out at regular intervals and the principal stays the same. This calculator is for cumulative FDs.</p></details>
+      <details class="faq"><summary>Is FD interest taxable?</summary>
+        <p>Yes, FD interest is added to your income and taxed at your slab rate, and banks may deduct TDS in some cases. The figures here are before tax. Check the current rules or ask a tax adviser.</p></details>
+      <details class="faq"><summary>Will my bank's maturity amount match this calculator exactly?</summary>
+        <p>It should be very close. Banks may round at each step, use days instead of months for part periods, or follow their own compounding rules, so a small difference is normal. Your FD receipt shows the exact maturity amount.</p></details>
+      <details class="faq"><summary>Is my data sent to a server?</summary>
+        <p>No. This calculator runs entirely in your browser. The amounts you enter are never uploaded or stored.</p></details>
+
+      <p class="privacy-note"><strong>Disclaimer:</strong> This calculator gives estimates for convenience and is not financial advice. Check final figures and current rates with your bank. See our <a href="../disclaimer.html">disclaimer</a>.</p>
+    </article>
+
+    <!--@related--><section class="related-wrap"><h2 class="section-title">Related tools</h2><div class="related"><a class="tool-card" href="../tools/gst-calculator.html"><span class="ic">💸</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>GST Calculator</h3><p>Calculate GST (5%, 12%, 18%, 28%) on any amount instantly. Inclusive &amp; exclusive.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/emi-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>EMI Calculator</h3><p>Calculate monthly EMI for home loan, car loan, or personal loan with amortisation.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/income-tax-calculator.html"><span class="ic">📋</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Income Tax Calculator</h3><p>Compare income tax under the old and new regime for FY 2026-27 and see which saves more.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/sip-calculator.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>SIP Calculator</h3><p>Calculate returns on your Systematic Investment Plan (SIP). CAGR &amp; wealth gain.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/ppf-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>PPF Calculator</h3><p>Calculate Public Provident Fund maturity amount with compounding interest.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/compound-interest.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Compound Interest Calculator</h3><p>Calculate compound interest with different compounding frequencies.</p><span class="go">Open tool →</span></a></div></section><!--/@related-->
+    </main>
+
+    <aside class="rail rail-right"><!--@rail right--><div class="rail-inner"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box rect"><span>Ad slot</span><span>300 × 250</span></div></div><section class="rail-card"><h2>Popular tools</h2><ol><li><a href="../tools/gst-calculator.html"><span>GST Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/emi-calculator.html"><span>EMI Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/income-tax-calculator.html"><span>Income Tax Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/sip-calculator.html"><span>SIP Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/ppf-calculator.html"><span>PPF Calculator</span><span aria-hidden="true">→</span></a></li></ol></section><div class="rail-sticky"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box tall"><span>Ad slot</span><span>300 × 600</span></div></div></div></div><!--/@rail--></aside>
+  </div>
+
+<!--@footer--><footer class="site-footer"><div class="wrap"><div><strong>ToolsWebsite</strong><br>Free tools that run in your browser. Your files never leave your device.</div><nav aria-label="Categories"><a href="../category/finance.html">Finance</a></nav><nav aria-label="Company"><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav><nav aria-label="Legal"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../disclaimer.html">Disclaimer</a></nav></div></footer><!--/@footer-->
+
+  <script src="fd-calculator.js" defer></script>
+</body>
+</html>

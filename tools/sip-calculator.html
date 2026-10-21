@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" data-root="../" class="show-ad-placeholders">
+<head>
+<!--@head-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#B45309">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://toolswebsite.in/tools/sip-calculator.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolsWebsite">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="SIP Calculator: Mutual Fund SIP Returns (Free)">
+<meta property="og:description" content="Free SIP calculator for India. Enter your monthly investment, expected return and number of years to see the future value, total invested and estimated returns.">
+<meta property="og:url" content="https://toolswebsite.in/tools/sip-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="../core/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../core/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../core/design-system.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SIP Calculator","url":"https://toolswebsite.in/tools/sip-calculator.html","description":"Free SIP calculator for India. Enter your monthly investment, expected return and number of years to see the future value, total invested and estimated returns.","applicationCategory":"FinanceApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"dateModified":"2026-10-20","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is the SIP return calculated?","acceptedAnswer":{"@type":"Answer","text":"The calculator uses FV = P × [((1 + i)^n − 1) ÷ i] × (1 + i), where P is the monthly investment, i is the monthly rate (annual rate ÷ 12) and n is the number of months. For ₹5,000 a month at 12% for 10 years, the expected value is ₹11,61,695."}},{"@type":"Question","name":"Are SIP returns guaranteed?","acceptedAnswer":{"@type":"Answer","text":"No. Mutual fund returns depend on the market and can be lower than expected or negative, especially over short periods. The result shown here is an estimate based on the return you enter, not a promise."}},{"@type":"Question","name":"What return should I enter?","acceptedAnswer":{"@type":"Answer","text":"Use a cautious figure and try more than one. Returns differ by fund type: debt funds usually have lower and steadier returns than equity funds. Check the long-term record of the fund you are considering and do not assume that the past will repeat."}},{"@type":"Question","name":"Is a SIP better than a lump sum?","acceptedAnswer":{"@type":"Answer","text":"It depends on how you earn and invest. A SIP suits people who invest from monthly income and want to avoid timing the market. A lump sum can do better if the market rises soon after you invest and worse if it falls. This calculator covers SIPs only."}},{"@type":"Question","name":"Does the result include tax?","acceptedAnswer":{"@type":"Answer","text":"No. The figures are before tax and before any exit load. Tax on mutual fund gains depends on the fund type and how long you hold the units, so check the current rules or ask a tax adviser."}},{"@type":"Question","name":"Is my data sent to a server?","acceptedAnswer":{"@type":"Answer","text":"No. This calculator runs entirely in your browser. The amounts you enter are never uploaded or stored."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toolswebsite.in/"},{"@type":"ListItem","position":2,"name":"Finance","item":"https://toolswebsite.in/category/finance.html"},{"@type":"ListItem","position":3,"name":"SIP Calculator","item":"https://toolswebsite.in/tools/sip-calculator.html"}]}</script>
+<!--/@head-->
+<title>SIP Calculator: Mutual Fund SIP Returns (Free)</title>
+<meta name="description" content="Free SIP calculator for India. Enter your monthly investment, expected return and number of years to see the future value, total invested and estimated returns.">
+</head>
+<body>
+<!--@header--><header class="site-header"><div class="wrap"><a class="logo" href="../index.html">Tools<span>Website</span></a><nav class="site-nav" aria-label="Main"><a href="../index.html#all-tools">All Tools</a><a href="../index.html#all-tools" data-cat="pdf-image" class="hide-sm">PDF &amp; Image</a><a href="../category/finance.html" class="active" aria-current="page">Finance</a><a href="../index.html#all-tools" data-cat="dev" class="hide-sm">Dev Tools</a></nav></div></header><!--/@header-->
+
+  <div class="wrap layout">
+    <aside class="rail rail-left"><!--@rail left--><div class="rail-sticky" aria-label="Advertisement"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box sky"><span>Ad slot</span><span>160 × 600</span></div></div></div><!--/@rail--></aside>
+
+    <main>
+    <!--@crumbs--><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../category/finance.html">Finance</a> › SIP Calculator</nav><!--/@crumbs-->
+
+    <header class="tool-head">
+      <h1>SIP Calculator</h1>
+      <p class="lede">See what a monthly SIP in a mutual fund could grow to. Enter how much you invest each month, the return you expect and the number of years.</p>
+    </header>
+
+    <!-- ── Tool widget (above the fold) ── -->
+    <section class="widget" aria-label="SIP calculator">
+      <div class="field" id="amount-wrap">
+        <label for="amount">Monthly investment (₹)</label>
+        <input id="amount" type="number" inputmode="decimal" min="1" step="any" value="5000">
+        <span class="field-note" id="amount-words" aria-live="polite"></span>
+        <input id="amount-r" class="range" type="range" min="500" max="100000" step="500" value="5000" aria-label="Monthly investment slider">
+      </div>
+      <div class="row">
+        <div class="field" id="rate-wrap">
+          <label for="rate">Expected return (% per year)</label>
+          <input id="rate" type="number" inputmode="decimal" min="0" max="60" step="0.1" value="12">
+          <input id="rate-r" class="range" type="range" min="1" max="30" step="0.5" value="12" aria-label="Expected return slider">
+        </div>
+        <div class="field" id="tenure-wrap">
+          <label for="tenure">Investment period (years)</label>
+          <input id="tenure" type="number" inputmode="numeric" min="1" step="1" value="10">
+          <input id="tenure-r" class="range" type="range" min="1" max="40" step="1" value="10" aria-label="Investment period slider">
+        </div>
+      </div>
+      <p class="hint" id="hint" role="alert" hidden>Enter a monthly amount, a return up to 60% and a period of up to 50 years (in steps of one month, for example 2.5 years).</p>
+      <div class="result" id="out" aria-live="polite" hidden></div>
+      <div class="widget-foot">
+        <p class="privacy-note">Calculated in your browser. Nothing you type is uploaded.</p>
+        <button type="button" class="btn btn-ghost" id="copy">Copy result</button>
+      </div>
+    </section>
+
+    <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+    <!-- ── Blog article ── -->
+    <article class="article">
+      <h2>What is a SIP?</h2>
+      <p>SIP stands for Systematic Investment Plan. Instead of investing a large sum at one time, you invest a fixed amount in a mutual fund at regular intervals, usually every month. The amount is debited from your bank account on a date you choose and used to buy units of the fund at that day's price.</p>
+      <p>A SIP works well for two reasons. First, it builds the habit of investing before you spend. Second, because you buy every month, you buy more units when prices are low and fewer when prices are high. This is called rupee cost averaging, and it means you do not have to guess the right day to invest.</p>
+
+      <h2>How to use this SIP calculator</h2>
+      <p>Three quick steps show what your monthly investment could become. Each step below shows what you will see on the calculator above.</p>
+
+      <h3>Step 1: Enter your monthly investment</h3>
+      <p>Type the amount you plan to invest every month, or drag the slider. The calculator writes the amount in thousands or lakhs underneath so you can check that the number is what you meant.</p>
+      <figure class="shot">
+        <img src="img/sip-calculator-step1.webp" width="732" height="723" loading="lazy" alt="SIP calculator with a monthly investment of 5,000 rupees highlighted">
+        <figcaption>A monthly SIP of ₹5,000.</figcaption>
+      </figure>
+
+      <h3>Step 2: Set the expected return and the period</h3>
+      <p>Enter the yearly return you expect and how many years you will keep investing. Nobody knows future returns, so treat this as an assumption and try a few values. A lower number shows a cautious case and a higher one a hopeful case.</p>
+      <figure class="shot">
+        <img src="img/sip-calculator-step2.webp" width="732" height="723" loading="lazy" alt="SIP calculator with an expected return of 12 percent and an investment period of 10 years highlighted">
+        <figcaption>12% a year for 10 years.</figcaption>
+      </figure>
+
+      <h3>Step 3: Read the result</h3>
+      <p>The expected value appears at the top. Below it you can see the total you put in and the estimated returns on top of that. The coloured bar shows how much of the final value is your own money and how much is growth. Use <strong>Copy result</strong> to paste the summary into a message or a spreadsheet.</p>
+      <figure class="shot">
+        <img src="img/sip-calculator-step3.webp" width="732" height="723" loading="lazy" alt="SIP result showing expected value 11,61,695 rupees, amount invested 6,00,000 rupees and estimated returns 5,61,695 rupees">
+        <figcaption>₹5,000 a month at 12% for 10 years: ₹6,00,000 invested, about ₹11.6 lakh at the end.</figcaption>
+      </figure>
+
+      <h3>Optional: see how the money grows each year</h3>
+      <p>Select <strong>Show year-by-year growth</strong> to see the invested amount, the returns and the total value at the end of every year. You will notice that the returns column grows faster each year. That is compounding at work.</p>
+      <figure class="shot">
+        <img src="img/sip-calculator-step4.webp" width="732" height="1063" loading="lazy" alt="Year-by-year table showing invested amount, returns and total value at the end of each year">
+        <figcaption>The yearly table: value grows faster in the later years.</figcaption>
+      </figure>
+
+      <h2>SIP formula</h2>
+      <div class="formula">FV = P × [((1 + i)<sup>n</sup> − 1) ÷ i] × (1 + i)</div>
+      <p>Here <strong>FV</strong> is the future value, <strong>P</strong> is the monthly investment, <strong>i</strong> is the monthly rate of return (annual rate ÷ 12 ÷ 100) and <strong>n</strong> is the number of monthly instalments. The last factor (1 + i) assumes each instalment is invested at the start of the month. If the return is 0%, the value is simply P × n.</p>
+      <p>Worked example: P = ₹5,000, annual return 12%, period 10 years. Then i = 0.01 and n = 120. The factor ((1.01)<sup>120</sup> − 1) ÷ 0.01 is about 230.04, so FV = 5,000 × 230.04 × 1.01 = ₹11,61,695. You invested ₹6,00,000, so the estimated gain is ₹5,61,695.</p>
+
+      <h2>SIP examples</h2>
+      <table>
+        <thead><tr><th>Monthly SIP</th><th>Return</th><th>Period</th><th>Invested</th><th>Expected value</th><th>Returns</th></tr></thead>
+        <tbody>
+          <tr><td>₹1,000</td><td>12%</td><td>10 years</td><td>₹1,20,000</td><td>₹2,32,339</td><td>₹1,12,339</td></tr>
+          <tr><td>₹5,000</td><td>12%</td><td>10 years</td><td>₹6,00,000</td><td>₹11,61,695</td><td>₹5,61,695</td></tr>
+          <tr><td>₹10,000</td><td>12%</td><td>15 years</td><td>₹18,00,000</td><td>₹50,45,760</td><td>₹32,45,760</td></tr>
+          <tr><td>₹25,000</td><td>12%</td><td>20 years</td><td>₹60,00,000</td><td>₹2,49,78,698</td><td>₹1,89,78,698</td></tr>
+        </tbody>
+      </table>
+      <p>These are illustrations that assume a steady 12% every year. Real market returns move up and down and can be negative in a given year.</p>
+
+      <h2>Why time matters more than the amount</h2>
+      <p>The longer the money stays invested, the more of the final value comes from returns instead of your own deposits. The table uses ₹5,000 a month at 12%.</p>
+      <table>
+        <thead><tr><th>Years</th><th>Invested</th><th>Expected value</th><th>Returns</th></tr></thead>
+        <tbody>
+          <tr><td>5</td><td>₹3,00,000</td><td>₹4,12,432</td><td>₹1,12,432</td></tr>
+          <tr><td>10</td><td>₹6,00,000</td><td>₹11,61,695</td><td>₹5,61,695</td></tr>
+          <tr><td>15</td><td>₹9,00,000</td><td>₹25,22,880</td><td>₹16,22,880</td></tr>
+          <tr><td>20</td><td>₹12,00,000</td><td>₹49,95,740</td><td>₹37,95,740</td></tr>
+          <tr><td>25</td><td>₹15,00,000</td><td>₹94,88,175</td><td>₹79,88,175</td></tr>
+          <tr><td>30</td><td>₹18,00,000</td><td>₹1,76,49,569</td><td>₹1,58,49,569</td></tr>
+        </tbody>
+      </table>
+      <p>Doubling the period from 10 to 20 years does not double the result, it more than quadruples it: ₹11.6 lakh becomes ₹49.96 lakh for only twice the deposits. If you wait 10 years and then invest ₹5,000 a month for only the remaining 10 years, you end with ₹11.6 lakh instead of ₹49.96 lakh. Starting early is worth more than raising the amount later.</p>
+
+      <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+      <h2>How the expected return changes the result</h2>
+      <p>Small differences in the return add up over long periods. For ₹5,000 a month over 15 years the expected value is ₹17.4 lakh at 8%, ₹20.9 lakh at 10%, ₹25.2 lakh at 12% and ₹30.6 lakh at 14%. Because no one can promise a return, it helps to look at the lower figures when you plan an important goal such as a child's education or retirement.</p>
+      <p>This calculator shows returns before tax and before any exit load. Fund costs are already included in a fund's reported returns, so enter a return that you expect after those costs.</p>
+
+      <p>Planning other goals too? Compare a SIP with a guaranteed option using the <a data-tool="fd-calculator" href="../tools/fd-calculator.html">FD Calculator</a> or the <a data-tool="ppf-calculator" href="../tools/ppf-calculator.html">PPF Calculator</a>, and check your loan commitments with the <a data-tool="emi-calculator" href="../tools/emi-calculator.html">EMI Calculator</a>.</p>
+
+      <h2>Frequently asked questions</h2>
+      <details class="faq"><summary>How is the SIP return calculated?</summary>
+        <p>The calculator uses FV = P × [((1 + i)^n − 1) ÷ i] × (1 + i), where P is the monthly investment, i is the monthly rate (annual rate ÷ 12) and n is the number of months. For ₹5,000 a month at 12% for 10 years, the expected value is ₹11,61,695.</p></details>
+      <details class="faq"><summary>Are SIP returns guaranteed?</summary>
+        <p>No. Mutual fund returns depend on the market and can be lower than expected or negative, especially over short periods. The result shown here is an estimate based on the return you enter, not a promise.</p></details>
+      <details class="faq"><summary>What return should I enter?</summary>
+        <p>Use a cautious figure and try more than one. Returns differ by fund type: debt funds usually have lower and steadier returns than equity funds. Check the long-term record of the fund you are considering and do not assume that the past will repeat.</p></details>
+      <details class="faq"><summary>Is a SIP better than a lump sum?</summary>
+        <p>It depends on how you earn and invest. A SIP suits people who invest from monthly income and want to avoid timing the market. A lump sum can do better if the market rises soon after you invest and worse if it falls. This calculator covers SIPs only.</p></details>
+      <details class="faq"><summary>Does the result include tax?</summary>
+        <p>No. The figures are before tax and before any exit load. Tax on mutual fund gains depends on the fund type and how long you hold the units, so check the current rules or ask a tax adviser.</p></details>
+      <details class="faq"><summary>Is my data sent to a server?</summary>
+        <p>No. This calculator runs entirely in your browser. The amounts you enter are never uploaded or stored.</p></details>
+
+      <p class="privacy-note"><strong>Disclaimer:</strong> Mutual fund investments are subject to market risk. This calculator gives estimates for convenience and is not investment, tax or financial advice. See our <a href="../disclaimer.html">disclaimer</a>.</p>
+    </article>
+
+    <!--@related--><section class="related-wrap"><h2 class="section-title">Related tools</h2><div class="related"><a class="tool-card" href="../tools/gst-calculator.html"><span class="ic">💸</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>GST Calculator</h3><p>Calculate GST (5%, 12%, 18%, 28%) on any amount instantly. Inclusive &amp; exclusive.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/emi-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>EMI Calculator</h3><p>Calculate monthly EMI for home loan, car loan, or personal loan with amortisation.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/income-tax-calculator.html"><span class="ic">📋</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Income Tax Calculator</h3><p>Compare income tax under the old and new regime for FY 2026-27 and see which saves more.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/ppf-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>PPF Calculator</h3><p>Calculate Public Provident Fund maturity amount with compounding interest.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/fd-calculator.html"><span class="ic">🏧</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>FD Calculator</h3><p>Calculate maturity amount and interest earned on Fixed Deposits.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/compound-interest.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Compound Interest Calculator</h3><p>Calculate compound interest with different compounding frequencies.</p><span class="go">Open tool →</span></a></div></section><!--/@related-->
+    </main>
+
+    <aside class="rail rail-right"><!--@rail right--><div class="rail-inner"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box rect"><span>Ad slot</span><span>300 × 250</span></div></div><section class="rail-card"><h2>Popular tools</h2><ol><li><a href="../tools/gst-calculator.html"><span>GST Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/emi-calculator.html"><span>EMI Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/income-tax-calculator.html"><span>Income Tax Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/sip-calculator.html"><span>SIP Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/ppf-calculator.html"><span>PPF Calculator</span><span aria-hidden="true">→</span></a></li></ol></section><div class="rail-sticky"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box tall"><span>Ad slot</span><span>300 × 600</span></div></div></div></div><!--/@rail--></aside>
+  </div>
+
+<!--@footer--><footer class="site-footer"><div class="wrap"><div><strong>ToolsWebsite</strong><br>Free tools that run in your browser. Your files never leave your device.</div><nav aria-label="Categories"><a href="../category/finance.html">Finance</a></nav><nav aria-label="Company"><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav><nav aria-label="Legal"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../disclaimer.html">Disclaimer</a></nav></div></footer><!--/@footer-->
+
+  <script src="sip-calculator.js" defer></script>
+</body>
+</html>

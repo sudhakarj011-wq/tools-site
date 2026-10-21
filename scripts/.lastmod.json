@@ -1,0 +1,78 @@
+{
+ "404.html": {
+  "lastmod": "2026-10-19",
+  "hash": "6a0054f1917d73d884cb5938171abe83560eac62"
+ },
+ "about.html": {
+  "lastmod": "2026-10-19",
+  "hash": "33401e8f25a1ab3e993d9a35fc70b9191013bf5d"
+ },
+ "contact.html": {
+  "lastmod": "2026-10-19",
+  "hash": "c968aac31e539c741e14e9a2b53fef3bbc4303bc"
+ },
+ "disclaimer.html": {
+  "lastmod": "2026-10-19",
+  "hash": "06e8a69df8f3ed2308dfba6be4c35485e7f9e1ff"
+ },
+ "index.html": {
+  "lastmod": "2026-10-20",
+  "hash": "174444551fbb3c84b83c8e0804bd59ac9b38efbb"
+ },
+ "privacy-policy.html": {
+  "lastmod": "2026-10-19",
+  "hash": "73a9b93f2b0a78987ef41bbf8eddbbf8e9630118"
+ },
+ "terms.html": {
+  "lastmod": "2026-10-19",
+  "hash": "19d15603b445310226ea60a2432497c90827a719"
+ },
+ "tools/gst-calculator.html": {
+  "lastmod": "2026-10-20",
+  "hash": "73416311e3100618f198b4fca140f1d641a29103"
+ },
+ "tools/emi-calculator.html": {
+  "lastmod": "2026-10-20",
+  "hash": "1ac099ef7c7a2521c2ce35ac42bfc6b8615e3a26"
+ },
+ "tools/sip-calculator.html": {
+  "lastmod": "2026-10-20",
+  "hash": "dda4e9ca71196adbfd47834188f3e15285359eb4"
+ },
+ "category/finance.html": {
+  "lastmod": "2026-10-20",
+  "hash": "78eb62eb775882744c43f382152797bdd9fae3a5"
+ },
+ "tools/fd-calculator.html": {
+  "lastmod": "2026-10-20",
+  "hash": "8a6348d4bef8e4fd9f572bc194da5b9c4f70917e"
+ },
+ "tools/ppf-calculator.html": {
+  "lastmod": "2026-10-20",
+  "hash": "99e60500c6a1f5eeb8735c4a9cfcc87b9f81a97f"
+ },
+ "tools/income-tax-calculator.html": {
+  "lastmod": "2026-10-20",
+  "hash": "b15662dead77427ef179f3d53aef91f2a893fc61"
+ },
+ "tools/compound-interest.html": {
+  "lastmod": "2026-10-20",
+  "hash": "b5e0f486f3554990759ce3a878427905ac56f058"
+ },
+ "tools/simple-interest.html": {
+  "lastmod": "2026-10-20",
+  "hash": "65cec7841321e3f19e8e2e739ca7d48a839eae2b"
+ },
+ "tools/percentage-calculator.html": {
+  "lastmod": "2026-10-20",
+  "hash": "5c0e91929a65dc7bcc27fee72a74f3376d4b02c8"
+ },
+ "tools/age-calculator.html": {
+  "lastmod": "2026-10-20",
+  "hash": "a0d77f5eea7b2ec9d2c1e0fb3b1e63ceb5d65569"
+ },
+ "tools/discount-calculator.html": {
+  "lastmod": "2026-10-20",
+  "hash": "576725da4aff782cc0db7543b38a0923ad2143ed"
+ }
+}

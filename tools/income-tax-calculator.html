@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en" data-root="../" class="show-ad-placeholders">
+<head>
+<!--@head-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#B45309">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://toolswebsite.in/tools/income-tax-calculator.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolsWebsite">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Income Tax Calculator FY 2026-27: Old vs New Regime">
+<meta property="og:description" content="Free income tax calculator for India, FY 2026-27. Enter your income and deductions to compare the old and new regime and see which one saves more tax.">
+<meta property="og:url" content="https://toolswebsite.in/tools/income-tax-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="../core/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../core/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../core/design-system.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Income Tax Calculator","url":"https://toolswebsite.in/tools/income-tax-calculator.html","description":"Free income tax calculator for India, FY 2026-27. Enter your income and deductions to compare the old and new regime and see which one saves more tax.","applicationCategory":"FinanceApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"dateModified":"2026-10-20","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which tax regime is better for me?","acceptedAnswer":{"@type":"Answer","text":"For most people with income up to about ₹20 lakh the new regime costs less unless total deductions are very large. Enter your own figures above and the calculator shows which regime wins and by how much."}},{"@type":"Question","name":"Is income up to ₹12 lakh really tax-free?","acceptedAnswer":{"@type":"Answer","text":"Yes, under the new regime, if your taxable income is ₹12,00,000 or less the Section 87A rebate cancels the tax. For a salaried person the gross income can be up to ₹12,75,000 because of the ₹75,000 standard deduction. This does not cover income taxed at special rates such as capital gains."}},{"@type":"Question","name":"Can I claim 80C in the new regime?","acceptedAnswer":{"@type":"Answer","text":"No. The new regime allows almost no deductions apart from the standard deduction, so 80C, 80D, HRA and home loan interest on a self-occupied house count only in the old regime."}},{"@type":"Question","name":"What is marginal relief?","acceptedAnswer":{"@type":"Answer","text":"If your taxable income is just above ₹12 lakh, marginal relief limits your tax to the amount by which your income exceeds ₹12 lakh, so a small rise in income never makes you pay more tax than the extra income itself."}},{"@type":"Question","name":"Can I switch between old and new regime every year?","acceptedAnswer":{"@type":"Answer","text":"Salaried people without business income can choose a regime each year when they file their return. Taxpayers with business income have much tighter rules for switching back, so check with a tax professional."}},{"@type":"Question","name":"Is my data sent to a server?","acceptedAnswer":{"@type":"Answer","text":"No. This tool runs entirely in your browser. What you enter is never uploaded or stored."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toolswebsite.in/"},{"@type":"ListItem","position":2,"name":"Finance","item":"https://toolswebsite.in/category/finance.html"},{"@type":"ListItem","position":3,"name":"Income Tax Calculator","item":"https://toolswebsite.in/tools/income-tax-calculator.html"}]}</script>
+<!--/@head-->
+<title>Income Tax Calculator FY 2026-27: Old vs New Regime</title>
+<meta name="description" content="Free income tax calculator for India, FY 2026-27. Enter your income and deductions to compare the old and new regime and see which one saves more tax.">
+</head>
+<body>
+<!--@header--><header class="site-header"><div class="wrap"><a class="logo" href="../index.html">Tools<span>Website</span></a><nav class="site-nav" aria-label="Main"><a href="../index.html#all-tools">All Tools</a><a href="../index.html#all-tools" data-cat="pdf-image" class="hide-sm">PDF &amp; Image</a><a href="../category/finance.html" class="active" aria-current="page">Finance</a><a href="../index.html#all-tools" data-cat="dev" class="hide-sm">Dev Tools</a></nav></div></header><!--/@header-->
+
+  <div class="wrap layout">
+    <aside class="rail rail-left"><!--@rail left--><div class="rail-sticky" aria-label="Advertisement"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box sky"><span>Ad slot</span><span>160 × 600</span></div></div></div><!--/@rail--></aside>
+
+    <main>
+    <!--@crumbs--><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../category/finance.html">Finance</a> › Income Tax Calculator</nav><!--/@crumbs-->
+
+    <header class="tool-head">
+      <h1>Income Tax Calculator</h1>
+      <p class="lede">Free income tax calculator for India, FY 2026-27. Enter your income and deductions to compare the old and new regime and see which one saves more tax.</p>
+    </header>
+
+    <!-- ── Tool widget ── -->
+    <section class="widget" aria-label="Income tax calculator">
+      <div class="field" id="gross-wrap">
+        <label for="gross">Annual income before deductions (₹)</label>
+        <input id="gross" type="number" inputmode="decimal" min="1" max="5000000" step="any" value="1500000">
+        <span class="field-note" id="gross-words" aria-live="polite"></span>
+        <input id="gross-r" class="range" type="range" min="300000" max="5000000" step="50000" value="1500000" aria-label="Income slider">
+      </div>
+      <div class="row">
+        <div class="field" id="age-wrap">
+          <span class="label" id="age-l">Age</span>
+          <div class="seg" id="age" role="group" aria-labelledby="age-l">
+            <button type="button" data-v="below60" aria-pressed="true">Below 60</button>
+            <button type="button" data-v="60to79" aria-pressed="false">60 to 79</button>
+            <button type="button" data-v="80plus" aria-pressed="false">80+</button>
+          </div>
+        </div>
+        <div class="field" id="sal-wrap">
+          <span class="label" id="sal-l">Salary or pension income?</span>
+          <div class="seg" id="sal" role="group" aria-labelledby="sal-l">
+            <button type="button" data-v="yes" aria-pressed="true">Yes</button>
+            <button type="button" data-v="no" aria-pressed="false">No</button>
+          </div>
+        </div>
+      </div>
+      <div class="field" id="ded-wrap">
+        <span class="label">Deductions (used only in the old regime)</span>
+        <div class="row">
+        <div class="field">
+          <label for="c80c">80C: PPF, ELSS, EPF, LIC (max ₹1,50,000)</label>
+          <input id="c80c" type="number" inputmode="decimal" min="0" step="any" placeholder="0" value="150000">
+        </div>
+        <div class="field">
+          <label for="d80d">80D: health insurance (max ₹1,00,000)</label>
+          <input id="d80d" type="number" inputmode="decimal" min="0" step="any" placeholder="0" value="">
+        </div>
+        </div>
+        <div class="row">
+        <div class="field">
+          <label for="nps">NPS extra, 80CCD(1B) (max ₹50,000)</label>
+          <input id="nps" type="number" inputmode="decimal" min="0" step="any" placeholder="0" value="">
+        </div>
+        <div class="field">
+          <label for="homeLoan">Home loan interest (max ₹2,00,000)</label>
+          <input id="homeLoan" type="number" inputmode="decimal" min="0" step="any" placeholder="0" value="">
+        </div>
+        </div>
+        <div class="row">
+        <div class="field">
+          <label for="other">Other: HRA, 80G, education loan interest ...</label>
+          <input id="other" type="number" inputmode="decimal" min="0" step="any" placeholder="0" value="">
+        </div>
+        </div>
+      </div>
+      <p class="hint" id="hint" role="alert" hidden>Enter an income up to ₹50,00,000 and keep each deduction within its limit (80C ₹1,50,000, 80D ₹1,00,000, NPS ₹50,000, home loan interest ₹2,00,000).</p>
+      <div class="result" id="out" aria-live="polite" hidden></div>
+      <div class="widget-foot">
+        <p class="privacy-note">Calculated in your browser. Nothing you type is uploaded.</p>
+        <button type="button" class="btn btn-ghost" id="copy">Copy result</button>
+      </div>
+    </section>
+
+    <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+    <article class="article">
+      <h2>What is an income tax calculator?</h2>
+      <p>Since April 2024 most salaried people in India have had to choose between two ways of paying income tax: the <strong>new regime</strong> with lower slab rates and almost no deductions, and the <strong>old regime</strong> with higher rates but deductions such as 80C, 80D, home loan interest and HRA. Which one costs less depends on your income and on how much you can deduct.</p>
+      <p>This income tax calculator does the comparison for you. Enter your income, your age group and your deductions, and it works out the tax under both regimes for FY 2026-27 and tells you which one saves more and by how much.</p>
+
+      <h2>How to use this income tax calculator</h2>
+      <h3>Step 1: Enter your income and age group</h3>
+      <p>Type your total yearly income before any deduction, or drag the slider. Choose your age group, because the old regime has a higher tax-free limit for senior citizens (60 to 79) and super senior citizens (80 and above). Tell it whether you earn salary or pension, since that decides whether the standard deduction applies.</p>
+      <figure class="shot">
+        <img src="img/income-tax-calculator-step1.webp" width="732" height="977" loading="lazy" alt="Income tax calculator with income, age group and salary option highlighted">
+        <figcaption>Enter your income, age group and whether it is salary or pension.</figcaption>
+      </figure>
+      <h3>Step 2: Add your deductions</h3>
+      <p>Fill in what you invest or pay under each head. These deductions count only in the old regime, so leave them empty if you do not claim them. Each box shows its limit.</p>
+      <figure class="shot">
+        <img src="img/income-tax-calculator-step2.webp" width="732" height="977" loading="lazy" alt="Income tax calculator deductions section highlighted">
+        <figcaption>Enter deductions for the old regime. Empty boxes count as zero.</figcaption>
+      </figure>
+      <h3>Step 3: See which regime wins</h3>
+      <p>The top line says which regime saves you more tax and the exact amount. Below it you see the total tax under each regime, including the 4% cess, and your effective tax rate.</p>
+      <figure class="shot">
+        <img src="img/income-tax-calculator-step3.webp" width="732" height="977" loading="lazy" alt="Income tax calculator result comparing new and old regime tax">
+        <figcaption>The result compares both regimes and shows the saving.</figcaption>
+      </figure>
+      <h3>Step 4: Open the full working</h3>
+      <p>Choose <strong>Show full working</strong> to see taxable income, tax on slabs, rebate or relief and cess for both regimes side by side. Use <strong>Copy result</strong> to save a summary.</p>
+      <figure class="shot">
+        <img src="img/income-tax-calculator-step4.webp" width="732" height="1317" loading="lazy" alt="Income tax calculator full working table opened">
+        <figcaption>The working table shows every step for both regimes.</figcaption>
+      </figure>
+
+      <h2>Tax slabs for FY 2026-27</h2>
+      <p>These are the slabs used by the calculator for resident individuals below 60. The slabs for FY 2026-27 are the same as for FY 2025-26.</p>
+      <table>
+        <thead><tr><th>New regime income</th><th>Rate</th><th>Old regime income</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td>Up to ₹4,00,000</td><td>Nil</td><td>Up to ₹2,50,000</td><td>Nil</td></tr>
+          <tr><td>₹4,00,001 to ₹8,00,000</td><td>5%</td><td>₹2,50,001 to ₹5,00,000</td><td>5%</td></tr>
+          <tr><td>₹8,00,001 to ₹12,00,000</td><td>10%</td><td>₹5,00,001 to ₹10,00,000</td><td>20%</td></tr>
+          <tr><td>₹12,00,001 to ₹16,00,000</td><td>15%</td><td rowspan="4">Above ₹10,00,000</td><td rowspan="4">30%</td></tr>
+          <tr><td>₹16,00,001 to ₹20,00,000</td><td>20%</td></tr>
+          <tr><td>₹20,00,001 to ₹24,00,000</td><td>25%</td></tr>
+          <tr><td>Above ₹24,00,000</td><td>30%</td></tr>
+        </tbody>
+      </table>
+      <p>In the old regime the tax-free limit is ₹3,00,000 for ages 60 to 79 and ₹5,00,000 for 80 and above. On top of the tax, a 4% health and education cess is added. The standard deduction for salary and pension is ₹75,000 in the new regime and ₹50,000 in the old regime.</p>
+
+      <h2>The rebate that makes income up to ₹12 lakh tax-free</h2>
+      <p>Under the new regime the Section 87A rebate cancels the whole tax if your taxable income is ₹12,00,000 or less. A salaried person gets there at a gross income of ₹12,75,000, because the ₹75,000 standard deduction comes off first. Just above the limit, <strong>marginal relief</strong> makes sure your tax is never more than the income above ₹12 lakh. At a gross income of ₹12,80,000, for example, the slab tax is ₹60,750, but relief limits it to ₹5,000 and the total with cess is ₹5,200. The calculator applies this automatically.</p>
+      <p>In the old regime the rebate is ₹12,500 and works only if taxable income is ₹5,00,000 or less. There is no marginal relief.</p>
+
+      <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+      <h2>Worked examples: new vs old regime</h2>
+      <p>These examples are for a salaried person below 60 who claims only ₹1,50,000 under Section 80C in the old regime.</p>
+      <table>
+        <thead><tr><th>Income</th><th>New regime tax</th><th>Old regime tax</th><th>Better</th></tr></thead>
+        <tbody>
+          <tr><td>₹7,00,000</td><td>₹0</td><td>₹0</td><td>Same</td></tr>
+          <tr><td>₹10,00,000</td><td>₹0</td><td>₹75,400</td><td>New saves ₹75,400</td></tr>
+          <tr><td>₹12,00,000</td><td>₹0</td><td>₹1,17,000</td><td>New saves ₹1,17,000</td></tr>
+          <tr><td>₹15,00,000</td><td>₹97,500</td><td>₹2,10,600</td><td>New saves ₹1,13,100</td></tr>
+          <tr><td>₹20,00,000</td><td>₹1,92,400</td><td>₹3,66,600</td><td>New saves ₹1,74,200</td></tr>
+          <tr><td>₹30,00,000</td><td>₹4,75,800</td><td>₹6,78,600</td><td>New saves ₹2,02,800</td></tr>
+        </tbody>
+      </table>
+
+      <h2>When does the old regime win?</h2>
+      <p>The old regime pays off only if your deductions are large. For a salaried person, the old regime matches the new one at about these total deductions (not counting the standard deduction):</p>
+      <ul>
+        <li>₹15 lakh income: about ₹5.5 lakh of deductions</li>
+        <li>₹20 lakh income: about ₹7.1 lakh of deductions</li>
+        <li>₹30 lakh income: about ₹8 lakh of deductions</li>
+      </ul>
+      <p>The 80C limit is ₹1.5 lakh, so you need HRA, a home loan, NPS and health insurance on top of it to get there. For example, at ₹30 lakh income with ₹1.5 lakh in 80C, ₹50,000 in NPS, ₹2 lakh of home loan interest and ₹5 lakh of HRA and other deductions, the old regime costs ₹4,44,600 against ₹4,75,800 under the new regime, a saving of ₹31,200.</p>
+
+      <h2>What this calculator does not cover</h2>
+      <p>It is built for resident individuals with income up to ₹50 lakh. It does not add surcharge (which applies above ₹50 lakh), and it does not handle capital gains at special rates, HUF, business income, or employer NPS contributions under the new regime. Taxable income and final tax are rounded to the nearest ₹10, as on your tax return. Use the result to compare regimes, and confirm the final figure on the income tax portal or with a tax professional.</p>
+
+      <h2>Frequently asked questions</h2>
+      <details class="faq"><summary>Which tax regime is better for me?</summary>
+        <p>For most people with income up to about ₹20 lakh the new regime costs less unless total deductions are very large. Enter your own figures above and the calculator shows which regime wins and by how much.</p></details>
+      <details class="faq"><summary>Is income up to ₹12 lakh really tax-free?</summary>
+        <p>Yes, under the new regime, if your taxable income is ₹12,00,000 or less the Section 87A rebate cancels the tax. For a salaried person the gross income can be up to ₹12,75,000 because of the ₹75,000 standard deduction. This does not cover income taxed at special rates such as capital gains.</p></details>
+      <details class="faq"><summary>Can I claim 80C in the new regime?</summary>
+        <p>No. The new regime allows almost no deductions apart from the standard deduction, so 80C, 80D, HRA and home loan interest on a self-occupied house count only in the old regime.</p></details>
+      <details class="faq"><summary>What is marginal relief?</summary>
+        <p>If your taxable income is just above ₹12 lakh, marginal relief limits your tax to the amount by which your income exceeds ₹12 lakh, so a small rise in income never makes you pay more tax than the extra income itself.</p></details>
+      <details class="faq"><summary>Can I switch between old and new regime every year?</summary>
+        <p>Salaried people without business income can choose a regime each year when they file their return. Taxpayers with business income have much tighter rules for switching back, so check with a tax professional.</p></details>
+      <details class="faq"><summary>Is my data sent to a server?</summary>
+        <p>No. This tool runs entirely in your browser. What you enter is never uploaded or stored.</p></details>
+
+      <p class="privacy-note"><strong>Disclaimer:</strong> This tool gives estimates for comparison and is not tax, financial or legal advice. Tax rules change with each Budget. Check the latest rules on the income tax portal before you file. See our <a href="../disclaimer.html">disclaimer</a>.</p>
+    </article>
+
+    <!--@related--><section class="related-wrap"><h2 class="section-title">Related tools</h2><div class="related"><a class="tool-card" href="../tools/gst-calculator.html"><span class="ic">💸</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>GST Calculator</h3><p>Calculate GST (5%, 12%, 18%, 28%) on any amount instantly. Inclusive &amp; exclusive.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/emi-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>EMI Calculator</h3><p>Calculate monthly EMI for home loan, car loan, or personal loan with amortisation.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/sip-calculator.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>SIP Calculator</h3><p>Calculate returns on your Systematic Investment Plan (SIP). CAGR &amp; wealth gain.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/ppf-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>PPF Calculator</h3><p>Calculate Public Provident Fund maturity amount with compounding interest.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/fd-calculator.html"><span class="ic">🏧</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>FD Calculator</h3><p>Calculate maturity amount and interest earned on Fixed Deposits.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/compound-interest.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Compound Interest Calculator</h3><p>Calculate compound interest with different compounding frequencies.</p><span class="go">Open tool →</span></a></div></section><!--/@related-->
+    </main>
+
+    <aside class="rail rail-right"><!--@rail right--><div class="rail-inner"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box rect"><span>Ad slot</span><span>300 × 250</span></div></div><section class="rail-card"><h2>Popular tools</h2><ol><li><a href="../tools/gst-calculator.html"><span>GST Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/emi-calculator.html"><span>EMI Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/income-tax-calculator.html"><span>Income Tax Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/sip-calculator.html"><span>SIP Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/ppf-calculator.html"><span>PPF Calculator</span><span aria-hidden="true">→</span></a></li></ol></section><div class="rail-sticky"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box tall"><span>Ad slot</span><span>300 × 600</span></div></div></div></div><!--/@rail--></aside>
+  </div>
+
+<!--@footer--><footer class="site-footer"><div class="wrap"><div><strong>ToolsWebsite</strong><br>Free tools that run in your browser. Your files never leave your device.</div><nav aria-label="Categories"><a href="../category/finance.html">Finance</a></nav><nav aria-label="Company"><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav><nav aria-label="Legal"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../disclaimer.html">Disclaimer</a></nav></div></footer><!--/@footer-->
+
+  <script src="income-tax-calculator.js" defer></script>
+</body>
+</html>

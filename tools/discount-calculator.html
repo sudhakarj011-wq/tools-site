@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en" data-root="../" class="show-ad-placeholders">
+<head>
+<!--@head-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#B45309">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://toolswebsite.in/tools/discount-calculator.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolsWebsite">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Discount Calculator: Sale Price &amp; % Off (Free)">
+<meta property="og:description" content="Free discount calculator. Find the sale price and savings with one or two discounts, or work out the discount percentage from the original and sale price.">
+<meta property="og:url" content="https://toolswebsite.in/tools/discount-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="../core/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../core/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../core/design-system.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Discount Calculator","url":"https://toolswebsite.in/tools/discount-calculator.html","description":"Free discount calculator. Find the sale price and savings with one or two discounts, or work out the discount percentage from the original and sale price.","applicationCategory":"FinanceApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"dateModified":"2026-10-20","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate a discount?","acceptedAnswer":{"@type":"Answer","text":"Multiply the original price by the discount percentage and divide by 100 to get the amount saved, then subtract it from the price. For 15% off ₹1,999, the saving is ₹299.85 and the price is ₹1,699.15."}},{"@type":"Question","name":"How do I find the discount percentage from two prices?","acceptedAnswer":{"@type":"Answer","text":"Subtract the sale price from the original price, divide by the original price and multiply by 100. For ₹1,299 reduced to ₹999 that is 300 ÷ 1,299 × 100 = 23.09%."}},{"@type":"Question","name":"How do I calculate two successive discounts?","acceptedAnswer":{"@type":"Answer","text":"Apply the first discount, then apply the second to the new price. 20% and then 10% on ₹2,500 gives ₹2,000 and then ₹1,800, a total discount of 28%. Enter the second discount in the Extra discount box."}},{"@type":"Question","name":"How do I find the original price before a discount?","acceptedAnswer":{"@type":"Answer","text":"Divide the sale price by (1 − discount ÷ 100). If the price after 25% off is ₹1,500, the original price is 1,500 ÷ 0.75 = ₹2,000."}},{"@type":"Question","name":"Can the discount be more than 100%?","acceptedAnswer":{"@type":"Answer","text":"No. A 100% discount makes the item free. This calculator accepts discounts from 0 to 100%."}},{"@type":"Question","name":"Is my data sent to a server?","acceptedAnswer":{"@type":"Answer","text":"No. This tool runs entirely in your browser. What you enter is never uploaded or stored."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toolswebsite.in/"},{"@type":"ListItem","position":2,"name":"Finance","item":"https://toolswebsite.in/category/finance.html"},{"@type":"ListItem","position":3,"name":"Discount Calculator","item":"https://toolswebsite.in/tools/discount-calculator.html"}]}</script>
+<!--/@head-->
+<title>Discount Calculator: Sale Price & % Off (Free)</title>
+<meta name="description" content="Free discount calculator. Find the sale price and savings with one or two discounts, or work out the discount percentage from the original and sale price.">
+</head>
+<body>
+<!--@header--><header class="site-header"><div class="wrap"><a class="logo" href="../index.html">Tools<span>Website</span></a><nav class="site-nav" aria-label="Main"><a href="../index.html#all-tools">All Tools</a><a href="../index.html#all-tools" data-cat="pdf-image" class="hide-sm">PDF &amp; Image</a><a href="../category/finance.html" class="active" aria-current="page">Finance</a><a href="../index.html#all-tools" data-cat="dev" class="hide-sm">Dev Tools</a></nav></div></header><!--/@header-->
+
+  <div class="wrap layout">
+    <aside class="rail rail-left"><!--@rail left--><div class="rail-sticky" aria-label="Advertisement"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box sky"><span>Ad slot</span><span>160 × 600</span></div></div></div><!--/@rail--></aside>
+
+    <main>
+    <!--@crumbs--><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../category/finance.html">Finance</a> › Discount Calculator</nav><!--/@crumbs-->
+
+    <header class="tool-head">
+      <h1>Discount Calculator</h1>
+      <p class="lede">Free discount calculator. Find the sale price and savings with one or two discounts, or work out the discount percentage from the original and sale price.</p>
+    </header>
+
+    <!-- ── Tool widget ── -->
+    <section class="widget" aria-label="Discount calculator">
+      <div class="field" id="mode-wrap">
+        <span class="label" id="mode-l">What do you want to find?</span>
+        <div class="seg" id="mode" role="group" aria-labelledby="mode-l">
+          <button type="button" data-v="sale" aria-pressed="true">Price after discount</button>
+          <button type="button" data-v="pct" aria-pressed="false">Discount %</button>
+        </div>
+      </div>
+      <div id="inputs-wrap">
+        <div class="field" id="p-wrap">
+          <label for="p" id="lp">Original price (₹)</label>
+          <input id="p" type="number" inputmode="decimal" min="0" step="any" value="2500">
+        </div>
+        <div class="row">
+          <div class="field" id="d1-wrap">
+            <label for="d1">Discount (%)</label>
+            <input id="d1" type="number" inputmode="decimal" min="0" max="100" step="any" value="20">
+          </div>
+          <div class="field" id="d2-wrap">
+            <label for="d2">Extra discount (%), optional</label>
+            <input id="d2" type="number" inputmode="decimal" min="0" max="100" step="any" placeholder="0" value="10">
+          </div>
+        </div>
+        <div class="field" id="s-wrap" hidden>
+          <label for="s">Sale price (₹)</label>
+          <input id="s" type="number" inputmode="decimal" min="0" step="any" value="1500">
+        </div>
+      </div>
+      <p class="hint" id="hint" role="alert" hidden>Enter a price above 0 and discounts between 0 and 100%.</p>
+      <div class="result" id="out" aria-live="polite" hidden></div>
+      <div class="widget-foot">
+        <p class="privacy-note">Calculated in your browser. Nothing you type is uploaded.</p>
+        <button type="button" class="btn btn-ghost" id="copy">Copy result</button>
+      </div>
+    </section>
+
+    <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+    <article class="article">
+      <h2>What is a discount calculator?</h2>
+      <p>A discount calculator tells you how much you pay after a percentage off, how much you save, and, working the other way, what percentage discount a shop is really giving. It is useful at sales, when comparing offers, and when a seller adds an "extra 10% off" on top of the first discount.</p>
+      <p>This discount calculator has two modes. <strong>Price after discount</strong> takes the original price and one or two discounts. <strong>Discount %</strong> takes the original and sale price and tells you the percentage off.</p>
+
+      <h2>How to use this discount calculator</h2>
+      <h3>Step 1: Choose what you want to find</h3>
+      <p>Pick <strong>Price after discount</strong> if you know the discount and want the price. Pick <strong>Discount %</strong> if you know both prices and want the percentage.</p>
+      <figure class="shot">
+        <img src="img/discount-calculator-step1.webp" width="732" height="741" loading="lazy" alt="Discount calculator with the mode buttons highlighted">
+        <figcaption>Choose price after discount or discount percentage.</figcaption>
+      </figure>
+      <h3>Step 2: Enter the numbers</h3>
+      <p>Type the original price and the discount. If the shop gives a second, extra discount, put it in the <em>Extra discount</em> box. Leave that box empty if there is none.</p>
+      <figure class="shot">
+        <img src="img/discount-calculator-step2.webp" width="732" height="741" loading="lazy" alt="Discount calculator with the price and discount boxes highlighted">
+        <figcaption>Enter the price and the discounts.</figcaption>
+      </figure>
+      <h3>Step 3: Read the price and your saving</h3>
+      <p>The big number is what you pay. Below it you see how much you save, the total discount as a percentage and the price after the first discount.</p>
+      <figure class="shot">
+        <img src="img/discount-calculator-step3.webp" width="732" height="741" loading="lazy" alt="Discount calculator result showing the price you pay and the amount saved">
+        <figcaption>The price you pay, your saving and the total discount.</figcaption>
+      </figure>
+      <h3>Step 4: Check the working</h3>
+      <p>Open <strong>Show working</strong> to see each step with your numbers, so you can verify the shop's bill. Use <strong>Copy result</strong> to save a summary.</p>
+      <figure class="shot">
+        <img src="img/discount-calculator-step4.webp" width="732" height="859" loading="lazy" alt="Discount calculator working steps opened">
+        <figcaption>The working shows how each discount is applied.</figcaption>
+      </figure>
+
+      <h2>Discount formulas</h2>
+      <div class="formula">Price you pay = Original price × (1 − Discount ÷ 100)</div>
+      <ul>
+        <li><strong>Amount saved</strong> = Original price − Price you pay</li>
+        <li><strong>Discount %</strong> = (Original price − Sale price) ÷ Original price × 100</li>
+        <li><strong>Original price from a sale price</strong> = Sale price ÷ (1 − Discount ÷ 100)</li>
+      </ul>
+      <p>The last formula helps when you only see the discounted price. If a jacket costs ₹1,500 after 25% off, the original price was 1,500 ÷ 0.75 = ₹2,000.</p>
+
+      <h2>Worked examples</h2>
+      <table>
+        <thead><tr><th>Original price</th><th>Discount</th><th>You pay</th><th>You save</th></tr></thead>
+        <tbody>
+          <tr><td>₹1,999</td><td>15%</td><td>₹1,699.15</td><td>₹299.85</td></tr>
+          <tr><td>₹999</td><td>50%</td><td>₹499.50</td><td>₹499.50</td></tr>
+          <tr><td>₹2,500</td><td>20% + 10% extra</td><td>₹1,800.00</td><td>₹700.00 (28%)</td></tr>
+          <tr><td>₹4,999</td><td>30% + 20% extra</td><td>₹2,799.44</td><td>₹2,199.56 (44%)</td></tr>
+        </tbody>
+      </table>
+      <p>To go the other way, a product marked down from ₹1,299 to ₹999 is a 23.09% discount, and one marked down from ₹2,000 to ₹1,500 is exactly 25% off.</p>
+
+      <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+      <h2>Two discounts are not added together</h2>
+      <p>This is the most common mistake. A "20% off, plus an extra 10% off" deal is not 30% off. The second discount is taken from the already reduced price. On ₹2,500, 20% off gives ₹2,000, and 10% off that gives ₹1,800. The total discount is ₹700, which is 28% of ₹2,500, not 30%.</p>
+      <p>The same is true for bigger numbers. "50% off, then another 50% off" is 75% off, so you pay a quarter of the price, not nothing. The order of the two discounts does not change the final price, because multiplying is the same in either order.</p>
+
+      <h2>Tips for comparing offers</h2>
+      <ul>
+        <li><strong>Compare the final price, not the percentage.</strong> A 40% discount on a higher marked price can cost more than 25% off a lower one.</li>
+        <li><strong>"Buy 1 get 1 free"</strong> means 50% off each item when you buy two.</li>
+        <li><strong>Check whether GST is included.</strong> If the price shown is before tax, add the tax with the <a data-tool="gst-calculator" href="../tools/gst-calculator.html">GST Calculator</a>.</li>
+        <li><strong>For other percentage sums</strong> such as a percentage increase, use the <a data-tool="percentage-calculator" href="../tools/percentage-calculator.html">Percentage Calculator</a>.</li>
+      </ul>
+
+      <h2>Frequently asked questions</h2>
+      <details class="faq"><summary>How do I calculate a discount?</summary>
+        <p>Multiply the original price by the discount percentage and divide by 100 to get the amount saved, then subtract it from the price. For 15% off ₹1,999, the saving is ₹299.85 and the price is ₹1,699.15.</p></details>
+      <details class="faq"><summary>How do I find the discount percentage from two prices?</summary>
+        <p>Subtract the sale price from the original price, divide by the original price and multiply by 100. For ₹1,299 reduced to ₹999 that is 300 ÷ 1,299 × 100 = 23.09%.</p></details>
+      <details class="faq"><summary>How do I calculate two successive discounts?</summary>
+        <p>Apply the first discount, then apply the second to the new price. 20% and then 10% on ₹2,500 gives ₹2,000 and then ₹1,800, a total discount of 28%. Enter the second discount in the Extra discount box.</p></details>
+      <details class="faq"><summary>How do I find the original price before a discount?</summary>
+        <p>Divide the sale price by (1 − discount ÷ 100). If the price after 25% off is ₹1,500, the original price is 1,500 ÷ 0.75 = ₹2,000.</p></details>
+      <details class="faq"><summary>Can the discount be more than 100%?</summary>
+        <p>No. A 100% discount makes the item free. This calculator accepts discounts from 0 to 100%.</p></details>
+      <details class="faq"><summary>Is my data sent to a server?</summary>
+        <p>No. This tool runs entirely in your browser. What you enter is never uploaded or stored.</p></details>
+
+      <p class="privacy-note"><strong>Disclaimer:</strong> This tool gives results for convenience. Shops may round prices or add taxes and fees, so check the final bill. See our <a href="../disclaimer.html">disclaimer</a>.</p>
+    </article>
+
+    <!--@related--><section class="related-wrap"><h2 class="section-title">Related tools</h2><div class="related"><a class="tool-card" href="../tools/gst-calculator.html"><span class="ic">💸</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>GST Calculator</h3><p>Calculate GST (5%, 12%, 18%, 28%) on any amount instantly. Inclusive &amp; exclusive.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/emi-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>EMI Calculator</h3><p>Calculate monthly EMI for home loan, car loan, or personal loan with amortisation.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/income-tax-calculator.html"><span class="ic">📋</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Income Tax Calculator</h3><p>Compare income tax under the old and new regime for FY 2026-27 and see which saves more.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/sip-calculator.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>SIP Calculator</h3><p>Calculate returns on your Systematic Investment Plan (SIP). CAGR &amp; wealth gain.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/ppf-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>PPF Calculator</h3><p>Calculate Public Provident Fund maturity amount with compounding interest.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/fd-calculator.html"><span class="ic">🏧</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>FD Calculator</h3><p>Calculate maturity amount and interest earned on Fixed Deposits.</p><span class="go">Open tool →</span></a></div></section><!--/@related-->
+    </main>
+
+    <aside class="rail rail-right"><!--@rail right--><div class="rail-inner"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box rect"><span>Ad slot</span><span>300 × 250</span></div></div><section class="rail-card"><h2>Popular tools</h2><ol><li><a href="../tools/gst-calculator.html"><span>GST Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/emi-calculator.html"><span>EMI Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/income-tax-calculator.html"><span>Income Tax Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/sip-calculator.html"><span>SIP Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/ppf-calculator.html"><span>PPF Calculator</span><span aria-hidden="true">→</span></a></li></ol></section><div class="rail-sticky"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box tall"><span>Ad slot</span><span>300 × 600</span></div></div></div></div><!--/@rail--></aside>
+  </div>
+
+<!--@footer--><footer class="site-footer"><div class="wrap"><div><strong>ToolsWebsite</strong><br>Free tools that run in your browser. Your files never leave your device.</div><nav aria-label="Categories"><a href="../category/finance.html">Finance</a></nav><nav aria-label="Company"><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav><nav aria-label="Legal"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../disclaimer.html">Disclaimer</a></nav></div></footer><!--/@footer-->
+
+  <script src="discount-calculator.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en" data-root="../" class="show-ad-placeholders">
+<head>
+<!--@head-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#B45309">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://toolswebsite.in/tools/percentage-calculator.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolsWebsite">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Percentage Calculator: % of, % Change, Increase (Free)">
+<meta property="og:description" content="Free percentage calculator. Find X% of a number, what percent one number is of another, percentage change, and increase or decrease by a percent.">
+<meta property="og:url" content="https://toolswebsite.in/tools/percentage-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="../core/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../core/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../core/design-system.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Percentage Calculator","url":"https://toolswebsite.in/tools/percentage-calculator.html","description":"Free percentage calculator. Find X% of a number, what percent one number is of another, percentage change, and increase or decrease by a percent.","applicationCategory":"FinanceApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"dateModified":"2026-10-20","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate a percentage of a number?","acceptedAnswer":{"@type":"Answer","text":"Divide the percentage by 100 and multiply by the number. For 15% of 2,000 that is 15 ÷ 100 × 2,000 = 300."}},{"@type":"Question","name":"How do I find what percent one number is of another?","acceptedAnswer":{"@type":"Answer","text":"Divide the first number by the second and multiply by 100. For 45 out of 180 that is 45 ÷ 180 × 100 = 25%."}},{"@type":"Question","name":"How do I calculate percentage increase or decrease?","acceptedAnswer":{"@type":"Answer","text":"Subtract the old value from the new value, divide by the old value and multiply by 100. A positive result is an increase and a negative result is a decrease. From 80 to 100 it is 20 ÷ 80 × 100 = 25%."}},{"@type":"Question","name":"How do I add or subtract a percentage from a number?","acceptedAnswer":{"@type":"Answer","text":"To add 20% to 500, multiply by 1.20 to get 600. To subtract 20%, multiply by 0.80 to get 400. The calculator does this when you choose \"Increase B by A%\" or \"Decrease B by A%\"."}},{"@type":"Question","name":"Can a percentage be more than 100?","acceptedAnswer":{"@type":"Answer","text":"Yes. 120% of 50 is 60. A value that doubles has grown by 100%, and one that triples has grown by 200%."}},{"@type":"Question","name":"Is my data sent to a server?","acceptedAnswer":{"@type":"Answer","text":"No. This tool runs entirely in your browser. What you enter is never uploaded or stored."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toolswebsite.in/"},{"@type":"ListItem","position":2,"name":"Finance","item":"https://toolswebsite.in/category/finance.html"},{"@type":"ListItem","position":3,"name":"Percentage Calculator","item":"https://toolswebsite.in/tools/percentage-calculator.html"}]}</script>
+<!--/@head-->
+<title>Percentage Calculator: % of, % Change, Increase (Free)</title>
+<meta name="description" content="Free percentage calculator. Find X% of a number, what percent one number is of another, percentage change, and increase or decrease by a percent.">
+</head>
+<body>
+<!--@header--><header class="site-header"><div class="wrap"><a class="logo" href="../index.html">Tools<span>Website</span></a><nav class="site-nav" aria-label="Main"><a href="../index.html#all-tools">All Tools</a><a href="../index.html#all-tools" data-cat="pdf-image" class="hide-sm">PDF &amp; Image</a><a href="../category/finance.html" class="active" aria-current="page">Finance</a><a href="../index.html#all-tools" data-cat="dev" class="hide-sm">Dev Tools</a></nav></div></header><!--/@header-->
+
+  <div class="wrap layout">
+    <aside class="rail rail-left"><!--@rail left--><div class="rail-sticky" aria-label="Advertisement"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box sky"><span>Ad slot</span><span>160 × 600</span></div></div></div><!--/@rail--></aside>
+
+    <main>
+    <!--@crumbs--><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../category/finance.html">Finance</a> › Percentage Calculator</nav><!--/@crumbs-->
+
+    <header class="tool-head">
+      <h1>Percentage Calculator</h1>
+      <p class="lede">Free percentage calculator. Find X% of a number, what percent one number is of another, percentage change, and increase or decrease by a percent.</p>
+    </header>
+
+    <!-- ── Tool widget ── -->
+    <section class="widget" aria-label="Percentage calculator">
+      <div class="field" id="mode-wrap">
+        <label for="mode">What do you want to find?</label>
+        <select id="mode">
+          <option value="of">What is A% of B?</option>
+          <option value="is">A is what % of B?</option>
+          <option value="change">% change from A to B</option>
+          <option value="increase">Increase B by A%</option>
+          <option value="decrease">Decrease B by A%</option>
+        </select>
+      </div>
+      <div class="row" id="inputs-wrap">
+        <div class="field">
+          <label for="a" id="la">Percentage (%)</label>
+          <input id="a" type="number" inputmode="decimal" step="any" value="15">
+        </div>
+        <div class="field">
+          <label for="b" id="lb">Of this number</label>
+          <input id="b" type="number" inputmode="decimal" step="any" value="2000">
+        </div>
+      </div>
+      <p class="hint" id="hint" role="alert" hidden>Enter two numbers.</p>
+      <div class="result" id="out" aria-live="polite" hidden></div>
+      <div class="widget-foot">
+        <p class="privacy-note">Calculated in your browser. Nothing you type is uploaded.</p>
+        <button type="button" class="btn btn-ghost" id="copy">Copy result</button>
+      </div>
+    </section>
+
+    <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+    <article class="article">
+      <h2>What is a percentage calculator?</h2>
+      <p>A percentage is a number out of 100, and "percent" means "per hundred". We use percentages for discounts, GST, marks, salary hikes, interest rates and price changes. The arithmetic is simple, but it is easy to put the wrong number in the wrong place.</p>
+      <p>This percentage calculator solves the five questions people ask most: what is A% of B, A is what percent of B, the percentage change from one value to another, and how to increase or decrease a number by a percentage. Pick the question, enter two numbers and read the answer along with the working.</p>
+
+      <h2>How to use this percentage calculator</h2>
+      <h3>Step 1: Choose what you want to find</h3>
+      <p>Open the drop-down and pick the question that matches yours, for example "What is A% of B?" for a discount or "% change from A to B" for a price rise. The labels of the two boxes change to match.</p>
+      <figure class="shot">
+        <img src="img/percentage-calculator-step1.webp" width="732" height="530" loading="lazy" alt="Percentage calculator with the question drop-down highlighted">
+        <figcaption>Pick the question you want answered.</figcaption>
+      </figure>
+      <h3>Step 2: Enter the two numbers</h3>
+      <p>Fill in the two boxes. Each box is named for what it holds, such as "Percentage (%)" and "Of this number", so you do not have to remember which comes first.</p>
+      <figure class="shot">
+        <img src="img/percentage-calculator-step2.webp" width="732" height="530" loading="lazy" alt="Percentage calculator with the two number boxes highlighted">
+        <figcaption>Enter the two numbers.</figcaption>
+      </figure>
+      <h3>Step 3: Read the answer</h3>
+      <p>The answer appears as you type, together with a sentence that spells out what it means, such as "15% of 2,000 is 300." Use <strong>Copy result</strong> to save it.</p>
+      <figure class="shot">
+        <img src="img/percentage-calculator-step3.webp" width="732" height="530" loading="lazy" alt="Percentage calculator result showing the answer and a sentence explaining it">
+        <figcaption>The answer and what it means in words.</figcaption>
+      </figure>
+      <h3>Step 4: Check the working</h3>
+      <p>Open <strong>Show working</strong> to see the formula with your numbers filled in, so you can follow the steps or copy them into your notes.</p>
+      <figure class="shot">
+        <img src="img/percentage-calculator-step4.webp" width="732" height="609" loading="lazy" alt="Percentage calculator working steps opened">
+        <figcaption>The working shows each step.</figcaption>
+      </figure>
+
+      <h2>Percentage formulas</h2>
+      <table>
+        <thead><tr><th>Question</th><th>Formula</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td>A% of B</td><td>A ÷ 100 × B</td><td>15% of 2,000 = 300</td></tr>
+          <tr><td>A is what % of B</td><td>A ÷ B × 100</td><td>45 is 25% of 180</td></tr>
+          <tr><td>% change from A to B</td><td>(B − A) ÷ A × 100</td><td>80 to 100 = +25%</td></tr>
+          <tr><td>Increase B by A%</td><td>B × (1 + A ÷ 100)</td><td>500 + 20% = 600</td></tr>
+          <tr><td>Decrease B by A%</td><td>B × (1 − A ÷ 100)</td><td>500 − 20% = 400</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Everyday examples</h2>
+      <ul>
+        <li><strong>Discount:</strong> A shirt costs ₹1,999 and is 15% off. Choose "Decrease B by A%": the price becomes ₹1,699.15, a saving of ₹299.85.</li>
+        <li><strong>GST:</strong> ₹1,000 plus 18% GST is ₹1,180. Choose "Increase B by A%". For a full GST breakdown use the <a data-tool="gst-calculator" href="../tools/gst-calculator.html">GST Calculator</a>.</li>
+        <li><strong>Marks:</strong> You scored 432 out of 600. Choose "A is what % of B": that is 72%.</li>
+        <li><strong>Salary hike:</strong> A salary rising from ₹40,000 to ₹46,000 is a 15% hike. Choose "% change from A to B".</li>
+        <li><strong>Interest:</strong> To find the interest on a deposit, use the <a data-tool="simple-interest" href="../tools/simple-interest.html">Simple Interest Calculator</a>.</li>
+      </ul>
+
+      <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+      <h2>Mistakes that give the wrong answer</h2>
+      <h3>An increase and a decrease of the same percent do not cancel out</h3>
+      <p>Raise 100 by 20% and you get 120. Take 20% off 120 and you get 96, not 100. The second percentage is applied to a bigger number. To get back from 100 to 80 after a 25% rise from 80, you need a 20% fall, not 25%.</p>
+      <h3>Percent and percentage points are different</h3>
+      <p>If an interest rate moves from 7% to 8%, it has risen by 1 percentage point. In percent terms it has risen by 14.29%, because 1 is one-seventh of 7. News reports often mix the two up.</p>
+      <h3>The base number matters</h3>
+      <p>"A is what percent of B" divides by B, the total. Swap the two and you answer a different question: 45 is 25% of 180, but 180 is 400% of 45.</p>
+
+      <h2>Frequently asked questions</h2>
+      <details class="faq"><summary>How do I calculate a percentage of a number?</summary>
+        <p>Divide the percentage by 100 and multiply by the number. For 15% of 2,000 that is 15 ÷ 100 × 2,000 = 300.</p></details>
+      <details class="faq"><summary>How do I find what percent one number is of another?</summary>
+        <p>Divide the first number by the second and multiply by 100. For 45 out of 180 that is 45 ÷ 180 × 100 = 25%.</p></details>
+      <details class="faq"><summary>How do I calculate percentage increase or decrease?</summary>
+        <p>Subtract the old value from the new value, divide by the old value and multiply by 100. A positive result is an increase and a negative result is a decrease. From 80 to 100 it is 20 ÷ 80 × 100 = 25%.</p></details>
+      <details class="faq"><summary>How do I add or subtract a percentage from a number?</summary>
+        <p>To add 20% to 500, multiply by 1.20 to get 600. To subtract 20%, multiply by 0.80 to get 400. The calculator does this when you choose "Increase B by A%" or "Decrease B by A%".</p></details>
+      <details class="faq"><summary>Can a percentage be more than 100?</summary>
+        <p>Yes. 120% of 50 is 60. A value that doubles has grown by 100%, and one that triples has grown by 200%.</p></details>
+      <details class="faq"><summary>Is my data sent to a server?</summary>
+        <p>No. This tool runs entirely in your browser. What you enter is never uploaded or stored.</p></details>
+
+      <p class="privacy-note"><strong>Disclaimer:</strong> This tool gives results for convenience. Check important figures, such as tax or loan amounts, against official documents. See our <a href="../disclaimer.html">disclaimer</a>.</p>
+    </article>
+
+    <!--@related--><section class="related-wrap"><h2 class="section-title">Related tools</h2><div class="related"><a class="tool-card" href="../tools/gst-calculator.html"><span class="ic">💸</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>GST Calculator</h3><p>Calculate GST (5%, 12%, 18%, 28%) on any amount instantly. Inclusive &amp; exclusive.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/emi-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>EMI Calculator</h3><p>Calculate monthly EMI for home loan, car loan, or personal loan with amortisation.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/income-tax-calculator.html"><span class="ic">📋</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Income Tax Calculator</h3><p>Compare income tax under the old and new regime for FY 2026-27 and see which saves more.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/sip-calculator.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>SIP Calculator</h3><p>Calculate returns on your Systematic Investment Plan (SIP). CAGR &amp; wealth gain.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/ppf-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>PPF Calculator</h3><p>Calculate Public Provident Fund maturity amount with compounding interest.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/fd-calculator.html"><span class="ic">🏧</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>FD Calculator</h3><p>Calculate maturity amount and interest earned on Fixed Deposits.</p><span class="go">Open tool →</span></a></div></section><!--/@related-->
+    </main>
+
+    <aside class="rail rail-right"><!--@rail right--><div class="rail-inner"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box rect"><span>Ad slot</span><span>300 × 250</span></div></div><section class="rail-card"><h2>Popular tools</h2><ol><li><a href="../tools/gst-calculator.html"><span>GST Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/emi-calculator.html"><span>EMI Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/income-tax-calculator.html"><span>Income Tax Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/sip-calculator.html"><span>SIP Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/ppf-calculator.html"><span>PPF Calculator</span><span aria-hidden="true">→</span></a></li></ol></section><div class="rail-sticky"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box tall"><span>Ad slot</span><span>300 × 600</span></div></div></div></div><!--/@rail--></aside>
+  </div>
+
+<!--@footer--><footer class="site-footer"><div class="wrap"><div><strong>ToolsWebsite</strong><br>Free tools that run in your browser. Your files never leave your device.</div><nav aria-label="Categories"><a href="../category/finance.html">Finance</a></nav><nav aria-label="Company"><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav><nav aria-label="Legal"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../disclaimer.html">Disclaimer</a></nav></div></footer><!--/@footer-->
+
+  <script src="percentage-calculator.js" defer></script>
+</body>
+</html>

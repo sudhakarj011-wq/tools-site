@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en" data-root="../" class="show-ad-placeholders">
+<head>
+<!--@head-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#B45309">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://toolswebsite.in/tools/gst-calculator.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolsWebsite">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="GST Calculator India — Add or Remove GST Online (Free)">
+<meta property="og:description" content="Free GST calculator for India. Add GST to a price or remove GST from a total, with CGST, SGST and IGST split for 5%, 12%, 18% and 28% rates.">
+<meta property="og:url" content="https://toolswebsite.in/tools/gst-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="../core/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../core/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../core/design-system.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"GST Calculator","url":"https://toolswebsite.in/tools/gst-calculator.html","description":"Free GST calculator for India. Add GST to a price or remove GST from a total, with CGST, SGST and IGST split for 5%, 12%, 18% and 28% rates.","applicationCategory":"FinanceApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"dateModified":"2026-10-20","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate GST on a price?","acceptedAnswer":{"@type":"Answer","text":"Multiply the price by the GST rate and divide by 100 to get the GST amount, then add it to the price. For example, 18% GST on ₹1,000 is ₹180, so the total is ₹1,180."}},{"@type":"Question","name":"How do I remove GST from a GST-inclusive amount?","acceptedAnswer":{"@type":"Answer","text":"Divide the total by (100 + GST rate) and multiply by 100 to get the original price. For ₹1,180 at 18%, the original price is ₹1,000 and the GST is ₹180."}},{"@type":"Question","name":"What is the difference between CGST, SGST and IGST?","acceptedAnswer":{"@type":"Answer","text":"For sales within one state, GST is split equally into CGST (Centre) and SGST (State). For sales between states, the full GST is charged as IGST."}},{"@type":"Question","name":"Which GST rate applies to my product or service?","acceptedAnswer":{"@type":"Answer","text":"It depends on the HSN or SAC code of the item. Common slabs are 5%, 12%, 18% and 28%. Check the official GST rate finder or ask your CA to confirm the correct rate."}},{"@type":"Question","name":"Is my data sent to a server?","acceptedAnswer":{"@type":"Answer","text":"No. This calculator runs entirely in your browser. The amounts you enter are never uploaded or stored."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toolswebsite.in/"},{"@type":"ListItem","position":2,"name":"Finance","item":"https://toolswebsite.in/category/finance.html"},{"@type":"ListItem","position":3,"name":"GST Calculator","item":"https://toolswebsite.in/tools/gst-calculator.html"}]}</script>
+<!--/@head-->
+<title>GST Calculator India — Add or Remove GST Online (Free)</title>
+<meta name="description" content="Free GST calculator for India. Add GST to a price or remove GST from a total, with CGST, SGST and IGST split for 5%, 12%, 18% and 28% rates.">
+</head>
+<body>
+<!--@header--><header class="site-header"><div class="wrap"><a class="logo" href="../index.html">Tools<span>Website</span></a><nav class="site-nav" aria-label="Main"><a href="../index.html#all-tools">All Tools</a><a href="../index.html#all-tools" data-cat="pdf-image" class="hide-sm">PDF &amp; Image</a><a href="../category/finance.html" class="active" aria-current="page">Finance</a><a href="../index.html#all-tools" data-cat="dev" class="hide-sm">Dev Tools</a></nav></div></header><!--/@header-->
+
+  <div class="wrap layout">
+    <aside class="rail rail-left"><!--@rail left--><div class="rail-sticky" aria-label="Advertisement"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box sky"><span>Ad slot</span><span>160 × 600</span></div></div></div><!--/@rail--></aside>
+
+    <main>
+    <!--@crumbs--><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../category/finance.html">Finance</a> › GST Calculator</nav><!--/@crumbs-->
+
+    <header class="tool-head">
+      <h1>GST Calculator</h1>
+      <p class="lede">Add GST to a price or remove it from a total. Get the CGST, SGST and IGST split for 5%, 12%, 18% and 28% rates.</p>
+    </header>
+
+    <!-- ── Tool widget (above the fold) ── -->
+    <section class="widget" aria-label="GST calculator">
+      <div class="row">
+        <div class="field">
+          <label for="amount">Amount (₹)</label>
+          <input id="amount" type="number" inputmode="decimal" min="0" step="any" placeholder="e.g. 1000" value="1000">
+        </div>
+        <div class="field">
+          <span class="label" id="mode-l">Calculation type</span>
+          <div class="seg" id="mode" role="group" aria-labelledby="mode-l">
+            <button type="button" data-v="exclusive" aria-pressed="true">Add GST</button>
+            <button type="button" data-v="inclusive" aria-pressed="false">Remove GST</button>
+          </div>
+        </div>
+      </div>
+      <div class="field">
+        <span class="label" id="rate-l">GST rate</span>
+        <div class="seg" id="rate" role="group" aria-labelledby="rate-l">
+          <button type="button" data-v="5" aria-pressed="false">5%</button>
+          <button type="button" data-v="12" aria-pressed="false">12%</button>
+          <button type="button" data-v="18" aria-pressed="true">18%</button>
+          <button type="button" data-v="28" aria-pressed="false">28%</button>
+        </div>
+      </div>
+      <div class="result" id="out" aria-live="polite" hidden></div>
+      <div class="widget-foot">
+        <p class="privacy-note">Calculated in your browser. Nothing you type is uploaded.</p>
+        <button type="button" class="btn btn-ghost" id="copy">Copy result</button>
+      </div>
+    </section>
+
+    <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+    <!-- ── Blog-format article (SEO content) ── -->
+    <article class="article">
+      <h2>What is GST?</h2>
+      <p>Goods and Services Tax (GST) is the single indirect tax charged on most goods and services in India. It replaced older taxes such as VAT, service tax and excise duty. Every business that sells above the registration threshold collects GST from customers and pays it to the government after claiming credit for the GST it paid on its own purchases.</p>
+      <p>Because GST is added on top of a price, it is easy to get the numbers wrong when preparing an invoice, comparing quotes or checking a bill. This calculator does the arithmetic for you and shows the tax split the way it appears on a GST invoice.</p>
+
+      <h2>How to use this GST calculator</h2>
+      <p>It takes three quick steps. Each one below shows exactly what you will see on the calculator above.</p>
+
+      <h3>Step 1: Enter the amount and choose the calculation type</h3>
+      <p>Type the amount in rupees. Then choose <strong>Add GST</strong> if your amount is the price before tax (for example, a quotation that says "plus GST"). Choose <strong>Remove GST</strong> if the amount already includes tax (for example, an MRP or a shop bill).</p>
+      <figure class="shot">
+        <img src="img/gst-step1-amount.webp" width="732" height="555" loading="lazy" alt="GST calculator showing an amount of 1000 rupees and the Add GST option selected">
+        <figcaption>Amount ₹1,000 with <strong>Add GST</strong> selected.</figcaption>
+      </figure>
+
+      <h3>Step 2: Pick the GST rate</h3>
+      <p>Tap 5%, 12%, 18% or 28%. Use the rate printed on your invoice or the rate that matches the item's HSN or SAC code. Most services, including IT and software services, are charged at 18%.</p>
+      <figure class="shot">
+        <img src="img/gst-step2-rate.webp" width="732" height="555" loading="lazy" alt="GST rate selector with 5%, 12%, 18% and 28% options and 18% highlighted">
+        <figcaption>18% selected.</figcaption>
+      </figure>
+
+      <h3>Step 3: Read the result</h3>
+      <p>The total appears at the top, followed by the original amount, CGST, SGST and IGST. Use <strong>Copy result</strong> to paste the full breakup into an invoice draft, a spreadsheet or a message.</p>
+      <figure class="shot">
+        <img src="img/gst-step3-result.webp" width="732" height="555" loading="lazy" alt="GST result showing total 1,180 rupees with original amount 1,000, CGST 90, SGST 90 and IGST 180">
+        <figcaption>₹1,000 at 18% gives a total of ₹1,180, made up of ₹90 CGST and ₹90 SGST (or ₹180 IGST for an inter-state sale).</figcaption>
+      </figure>
+
+      <h3>Example: removing GST from a bill</h3>
+      <p>Say a bill totals ₹1,180 and you want to know the price before tax. Choose <strong>Remove GST</strong>, enter 1180 and pick 18%. The calculator shows the original price (₹1,000) and the GST contained in the bill (₹180).</p>
+      <figure class="shot">
+        <img src="img/gst-example-remove.webp" width="732" height="555" loading="lazy" alt="GST calculator set to Remove GST with amount 1180 and 18% rate, showing original amount 1000 and total 1180">
+        <figcaption>Remove GST: ₹1,180 including 18% GST is ₹1,000 plus ₹180 tax.</figcaption>
+      </figure>
+
+      <h2>GST formulas</h2>
+      <h3>Adding GST to a price</h3>
+      <div class="formula">GST amount = Price × GST rate ÷ 100<br>Total = Price + GST amount</div>
+      <h3>Removing GST from a total</h3>
+      <div class="formula">Original price = Total × 100 ÷ (100 + GST rate)<br>GST amount = Total − Original price</div>
+
+      <h2>Worked examples</h2>
+      <table>
+        <thead><tr><th>Case</th><th>Amount</th><th>Rate</th><th>GST</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>Add GST</td><td>₹1,000</td><td>18%</td><td>₹180.00</td><td>Total ₹1,180.00</td></tr>
+          <tr><td>Add GST</td><td>₹2,500</td><td>5%</td><td>₹125.00</td><td>Total ₹2,625.00</td></tr>
+          <tr><td>Remove GST</td><td>₹1,180</td><td>18%</td><td>₹180.00</td><td>Original ₹1,000.00</td></tr>
+          <tr><td>Remove GST</td><td>₹5,600</td><td>12%</td><td>₹600.00</td><td>Original ₹5,000.00</td></tr>
+        </tbody>
+      </table>
+
+      <h2>CGST, SGST and IGST explained</h2>
+      <p>When a seller and buyer are in the same state, the GST rate is split into two equal halves. At 18%, that means 9% CGST goes to the Centre and 9% SGST goes to the state. When the sale crosses a state border, the full 18% is charged as IGST instead. The total tax is the same either way; only the invoice breakup changes.</p>
+
+      <h2>Common GST rate slabs</h2>
+      <table>
+        <thead><tr><th>Rate</th><th>Typically applies to</th></tr></thead>
+        <tbody>
+          <tr><td>5%</td><td>Many essentials, some transport and food items</td></tr>
+          <tr><td>12%</td><td>Some processed foods, certain goods and services</td></tr>
+          <tr><td>18%</td><td>Most services, IT and software services, many goods</td></tr>
+          <tr><td>28%</td><td>Luxury and demerit goods</td></tr>
+        </tbody>
+      </table>
+      <p>GST is only one part of a business or household budget. If you are also planning a loan or an investment, the <a data-tool="emi-calculator" href="../tools/emi-calculator.html">EMI Calculator</a>, <a data-tool="sip-calculator" href="../tools/sip-calculator.html">SIP Calculator</a> and <a data-tool="income-tax-calculator" href="../tools/income-tax-calculator.html">Income Tax Calculator</a> use the same simple layout.</p>
+      <div class="callout">The exact rate depends on the item's HSN or SAC code and can change with GST Council decisions. Confirm the current rate on the official GST portal or with your CA before filing.</div>
+
+      <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+      <h2>Frequently asked questions</h2>
+      <details class="faq"><summary>How do I calculate GST on a price?</summary>
+        <p>Multiply the price by the GST rate and divide by 100 to get the GST amount, then add it to the price. For example, 18% GST on ₹1,000 is ₹180, so the total is ₹1,180.</p></details>
+      <details class="faq"><summary>How do I remove GST from a GST-inclusive amount?</summary>
+        <p>Divide the total by (100 + GST rate) and multiply by 100 to get the original price. For ₹1,180 at 18%, the original price is ₹1,000 and the GST is ₹180.</p></details>
+      <details class="faq"><summary>What is the difference between CGST, SGST and IGST?</summary>
+        <p>For sales within one state, GST is split equally into CGST (Centre) and SGST (State). For sales between states, the full GST is charged as IGST.</p></details>
+      <details class="faq"><summary>Which GST rate applies to my product or service?</summary>
+        <p>It depends on the HSN or SAC code of the item. Common slabs are 5%, 12%, 18% and 28%. Check the official GST rate finder or ask your CA to confirm the correct rate.</p></details>
+      <details class="faq"><summary>Is my data sent to a server?</summary>
+        <p>No. This calculator runs entirely in your browser. The amounts you enter are never uploaded or stored.</p></details>
+
+      <p class="privacy-note"><strong>Disclaimer:</strong> This tool gives estimates for convenience and is not tax or financial advice. See our <a href="../disclaimer.html">disclaimer</a>.</p>
+    </article>
+
+    <!--@related--><section class="related-wrap"><h2 class="section-title">Related tools</h2><div class="related"><a class="tool-card" href="../tools/emi-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>EMI Calculator</h3><p>Calculate monthly EMI for home loan, car loan, or personal loan with amortisation.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/income-tax-calculator.html"><span class="ic">📋</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Income Tax Calculator</h3><p>Compare income tax under the old and new regime for FY 2026-27 and see which saves more.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/sip-calculator.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>SIP Calculator</h3><p>Calculate returns on your Systematic Investment Plan (SIP). CAGR &amp; wealth gain.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/ppf-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>PPF Calculator</h3><p>Calculate Public Provident Fund maturity amount with compounding interest.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/fd-calculator.html"><span class="ic">🏧</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>FD Calculator</h3><p>Calculate maturity amount and interest earned on Fixed Deposits.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/compound-interest.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Compound Interest Calculator</h3><p>Calculate compound interest with different compounding frequencies.</p><span class="go">Open tool →</span></a></div></section><!--/@related-->
+    </main>
+
+    <aside class="rail rail-right"><!--@rail right--><div class="rail-inner"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box rect"><span>Ad slot</span><span>300 × 250</span></div></div><section class="rail-card"><h2>Popular tools</h2><ol><li><a href="../tools/gst-calculator.html"><span>GST Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/emi-calculator.html"><span>EMI Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/income-tax-calculator.html"><span>Income Tax Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/sip-calculator.html"><span>SIP Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/ppf-calculator.html"><span>PPF Calculator</span><span aria-hidden="true">→</span></a></li></ol></section><div class="rail-sticky"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box tall"><span>Ad slot</span><span>300 × 600</span></div></div></div></div><!--/@rail--></aside>
+  </div>
+
+
+<!--@footer--><footer class="site-footer"><div class="wrap"><div><strong>ToolsWebsite</strong><br>Free tools that run in your browser. Your files never leave your device.</div><nav aria-label="Categories"><a href="../category/finance.html">Finance</a></nav><nav aria-label="Company"><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav><nav aria-label="Legal"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../disclaimer.html">Disclaimer</a></nav></div></footer><!--/@footer-->
+
+  <script src="gst-calculator.js" defer></script>
+</body>
+</html>

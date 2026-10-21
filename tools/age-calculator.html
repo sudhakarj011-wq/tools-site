@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en" data-root="../" class="show-ad-placeholders">
+<head>
+<!--@head-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#B45309">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://toolswebsite.in/tools/age-calculator.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolsWebsite">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="Age Calculator: Exact Age in Years, Months, Days">
+<meta property="og:description" content="Free age calculator. Enter a date of birth to get your exact age in years, months and days, plus total days, next birthday and age on any date.">
+<meta property="og:url" content="https://toolswebsite.in/tools/age-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="../core/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../core/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../core/design-system.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Age Calculator","url":"https://toolswebsite.in/tools/age-calculator.html","description":"Free age calculator. Enter a date of birth to get your exact age in years, months and days, plus total days, next birthday and age on any date.","applicationCategory":"FinanceApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"dateModified":"2026-10-20","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I calculate my age from my date of birth?","acceptedAnswer":{"@type":"Answer","text":"Subtract the birth year from the current year, then adjust if your birthday has not come yet this year. For an exact answer in years, months and days, enter your date of birth above and the calculator does the counting."}},{"@type":"Question","name":"How can I find my age on a particular date?","acceptedAnswer":{"@type":"Answer","text":"Type your date of birth, then change the \"Age as on\" date to the day you need, for example the cut-off date in a job notice. The age shown is your age on that date."}},{"@type":"Question","name":"How many days old am I?","acceptedAnswer":{"@type":"Answer","text":"Open \"Show age in months, weeks and days\". The total days is the number of days from your birth date to the \"Age as on\" date. For example, someone born on 15 August 1995 is 11,389 days old on 20 October 2026."}},{"@type":"Question","name":"What day of the week was I born?","acceptedAnswer":{"@type":"Answer","text":"The result shows the weekday of your date of birth. A person born on 15 August 1995 was born on a Tuesday."}},{"@type":"Question","name":"How does the calculator treat a 29 February birthday?","acceptedAnswer":{"@type":"Answer","text":"In years that are not leap years, it counts the birthday on 28 February. Some rules use 1 March, so check your form if the exact day matters."}},{"@type":"Question","name":"Is my date of birth sent to a server?","acceptedAnswer":{"@type":"Answer","text":"No. This tool runs entirely in your browser. What you enter is never uploaded or stored."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toolswebsite.in/"},{"@type":"ListItem","position":2,"name":"Finance","item":"https://toolswebsite.in/category/finance.html"},{"@type":"ListItem","position":3,"name":"Age Calculator","item":"https://toolswebsite.in/tools/age-calculator.html"}]}</script>
+<!--/@head-->
+<title>Age Calculator: Exact Age in Years, Months, Days</title>
+<meta name="description" content="Free age calculator. Enter a date of birth to get your exact age in years, months and days, plus total days, next birthday and age on any date.">
+</head>
+<body>
+<!--@header--><header class="site-header"><div class="wrap"><a class="logo" href="../index.html">Tools<span>Website</span></a><nav class="site-nav" aria-label="Main"><a href="../index.html#all-tools">All Tools</a><a href="../index.html#all-tools" data-cat="pdf-image" class="hide-sm">PDF &amp; Image</a><a href="../category/finance.html" class="active" aria-current="page">Finance</a><a href="../index.html#all-tools" data-cat="dev" class="hide-sm">Dev Tools</a></nav></div></header><!--/@header-->
+
+  <div class="wrap layout">
+    <aside class="rail rail-left"><!--@rail left--><div class="rail-sticky" aria-label="Advertisement"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box sky"><span>Ad slot</span><span>160 × 600</span></div></div></div><!--/@rail--></aside>
+
+    <main>
+    <!--@crumbs--><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../category/finance.html">Finance</a> › Age Calculator</nav><!--/@crumbs-->
+
+    <header class="tool-head">
+      <h1>Age Calculator</h1>
+      <p class="lede">Free age calculator. Enter a date of birth to get your exact age in years, months and days, plus total days, next birthday and age on any date.</p>
+    </header>
+
+    <!-- ── Tool widget ── -->
+    <section class="widget" aria-label="Age calculator">
+      <div class="row" id="dates-wrap">
+        <div class="field" id="dob-wrap">
+          <label for="dob">Date of birth</label>
+          <input id="dob" type="date" min="1900-01-01" max="2200-12-31">
+        </div>
+        <div class="field" id="ason-wrap">
+          <label for="ason">Age as on</label>
+          <input id="ason" type="date" min="1900-01-01" max="2200-12-31">
+          <button type="button" class="btn btn-ghost" id="today">Use today</button>
+        </div>
+      </div>
+      <p class="hint" id="hint" role="alert" hidden>Enter a valid date of birth.</p>
+      <div class="result" id="out" aria-live="polite" hidden></div>
+      <div class="widget-foot">
+        <p class="privacy-note">Calculated in your browser. Your date of birth is never uploaded.</p>
+        <button type="button" class="btn btn-ghost" id="copy">Copy result</button>
+      </div>
+    </section>
+
+    <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+    <article class="article">
+      <h2>What is an age calculator?</h2>
+      <p>An age calculator tells you exactly how old someone is, in years, months and days, from their date of birth. Counting by hand is easy to get wrong because months have 28, 29, 30 or 31 days and leap years add an extra day.</p>
+      <p>This age calculator does the counting for you. Enter a date of birth and it shows the exact age, the day of the week you were born, the total months, weeks and days you have lived, and how long is left until your next birthday. You can also work out the age on any other date, such as an exam cut-off or a form deadline.</p>
+
+      <h2>How to use this age calculator</h2>
+      <h3>Step 1: Enter the date of birth</h3>
+      <p>Tap the <strong>Date of birth</strong> box and pick the date. On a phone this opens the date picker. On a computer you can type the date or use the calendar. The box shows dates in your device's own format.</p>
+      <figure class="shot">
+        <img src="img/age-calculator-step1.webp" width="732" height="535" loading="lazy" alt="Age calculator with the date of birth box highlighted">
+        <figcaption>Enter the date of birth.</figcaption>
+      </figure>
+      <h3>Step 2: Choose the date to calculate the age on</h3>
+      <p>The <strong>Age as on</strong> box starts with today's date. To find the age on another day, such as the last date of an application form, change it. Press <strong>Use today</strong> to go back to today's date.</p>
+      <figure class="shot">
+        <img src="img/age-calculator-step2.webp" width="732" height="535" loading="lazy" alt="Age calculator with the Age as on date and Use today button highlighted">
+        <figcaption>Change the "Age as on" date if you need the age on another day.</figcaption>
+      </figure>
+      <h3>Step 3: Read the result</h3>
+      <p>Your age shows in years, months and days. Below it you see the weekday you were born and the date of your next birthday with the number of days left.</p>
+      <figure class="shot">
+        <img src="img/age-calculator-step3.webp" width="732" height="535" loading="lazy" alt="Age calculator result showing age in years, months and days and the next birthday">
+        <figcaption>Exact age, birth weekday and next birthday.</figcaption>
+      </figure>
+      <h3>Step 4: See the age in months, weeks and days</h3>
+      <p>Open <strong>Show age in months, weeks and days</strong> to see the same age in a single unit. Use <strong>Copy result</strong> to save a summary.</p>
+      <figure class="shot">
+        <img src="img/age-calculator-step4.webp" width="732" height="654" loading="lazy" alt="Age calculator total months, weeks and days table opened">
+        <figcaption>The same age in total months, weeks and days.</figcaption>
+      </figure>
+
+      <h2>How the age is worked out</h2>
+      <p>The calculator counts whole months from the date of birth first, then counts the days that are left over. For a birth date of 15 August 1995 and an "as on" date of 20 October 2026:</p>
+      <ul>
+        <li>From 15 August 1995 to 15 October 2026 is 31 years and 2 months.</li>
+        <li>From 15 October to 20 October is 5 days.</li>
+        <li>So the age is 31 years, 2 months and 5 days.</li>
+      </ul>
+      <p>The total is 374 months, or 11,389 days, which is exactly 1,627 weeks. The next birthday is 15 August 2027, a Sunday, which is 299 days away.</p>
+
+      <h2>Worked examples</h2>
+      <table>
+        <thead><tr><th>Date of birth</th><th>Age as on</th><th>Age</th><th>Total days</th></tr></thead>
+        <tbody>
+          <tr><td>1 January 2000</td><td>20 October 2026</td><td>26 years, 9 months, 19 days</td><td>9,789</td></tr>
+          <tr><td>15 August 1995</td><td>20 October 2026</td><td>31 years, 2 months, 5 days</td><td>11,389</td></tr>
+          <tr><td>25 December 1985</td><td>31 March 2027</td><td>41 years, 3 months, 6 days</td><td>15,071</td></tr>
+          <tr><td>15 June 2010</td><td>14 June 2026</td><td>15 years, 11 months, 30 days</td><td>5,843</td></tr>
+          <tr><td>31 January 1990</td><td>1 March 2023</td><td>33 years, 1 month, 1 day</td><td>12,082</td></tr>
+          <tr><td>29 February 2000</td><td>1 March 2026</td><td>26 years, 0 months, 1 day</td><td>9,497</td></tr>
+        </tbody>
+      </table>
+
+      <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+      <h2>Special cases: month ends and 29 February</h2>
+      <p>If you were born on the 31st and a month has fewer days, the calculator uses the last day of that month. A person born on 31 January 1990 reaches one month on 28 February and is 33 years, 1 month and 1 day old on 1 March 2023.</p>
+      <p>People born on 29 February have a real birthday only in leap years. In other years this calculator counts the birthday on 28 February. Some people and some official rules use 1 March instead, so if an exact legal age matters, check which rule your form follows.</p>
+
+      <h2>Where an exact age matters</h2>
+      <ul>
+        <li><strong>Exam and job forms:</strong> Notices often say "age as on" a cut-off date. Enter that date in the <em>Age as on</em> box.</li>
+        <li><strong>School admission:</strong> Schools set a minimum age on a particular date.</li>
+        <li><strong>Insurance and investments:</strong> Premiums and eligibility depend on age. For savings plans, try the <a data-tool="sip-calculator" href="../tools/sip-calculator.html">SIP Calculator</a> or the <a data-tool="ppf-calculator" href="../tools/ppf-calculator.html">PPF Calculator</a>.</li>
+        <li><strong>Milestones:</strong> Find out how many days old you are, or on which weekday you were born.</li>
+      </ul>
+
+      <h2>Frequently asked questions</h2>
+      <details class="faq"><summary>How do I calculate my age from my date of birth?</summary>
+        <p>Subtract the birth year from the current year, then adjust if your birthday has not come yet this year. For an exact answer in years, months and days, enter your date of birth above and the calculator does the counting.</p></details>
+      <details class="faq"><summary>How can I find my age on a particular date?</summary>
+        <p>Type your date of birth, then change the "Age as on" date to the day you need, for example the cut-off date in a job notice. The age shown is your age on that date.</p></details>
+      <details class="faq"><summary>How many days old am I?</summary>
+        <p>Open "Show age in months, weeks and days". The total days is the number of days from your birth date to the "Age as on" date. For example, someone born on 15 August 1995 is 11,389 days old on 20 October 2026.</p></details>
+      <details class="faq"><summary>What day of the week was I born?</summary>
+        <p>The result shows the weekday of your date of birth. A person born on 15 August 1995 was born on a Tuesday.</p></details>
+      <details class="faq"><summary>How does the calculator treat a 29 February birthday?</summary>
+        <p>In years that are not leap years, it counts the birthday on 28 February. Some rules use 1 March, so check your form if the exact day matters.</p></details>
+      <details class="faq"><summary>Is my date of birth sent to a server?</summary>
+        <p>No. This tool runs entirely in your browser. What you enter is never uploaded or stored.</p></details>
+
+      <p class="privacy-note"><strong>Disclaimer:</strong> This tool gives results for convenience. For legal, school or exam eligibility, follow the rules and the dates stated by the authority concerned. See our <a href="../disclaimer.html">disclaimer</a>.</p>
+    </article>
+
+    <!--@related--><section class="related-wrap"><h2 class="section-title">Related tools</h2><div class="related"><a class="tool-card" href="../tools/gst-calculator.html"><span class="ic">💸</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>GST Calculator</h3><p>Calculate GST (5%, 12%, 18%, 28%) on any amount instantly. Inclusive &amp; exclusive.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/emi-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>EMI Calculator</h3><p>Calculate monthly EMI for home loan, car loan, or personal loan with amortisation.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/income-tax-calculator.html"><span class="ic">📋</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Income Tax Calculator</h3><p>Compare income tax under the old and new regime for FY 2026-27 and see which saves more.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/sip-calculator.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>SIP Calculator</h3><p>Calculate returns on your Systematic Investment Plan (SIP). CAGR &amp; wealth gain.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/ppf-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>PPF Calculator</h3><p>Calculate Public Provident Fund maturity amount with compounding interest.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/fd-calculator.html"><span class="ic">🏧</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>FD Calculator</h3><p>Calculate maturity amount and interest earned on Fixed Deposits.</p><span class="go">Open tool →</span></a></div></section><!--/@related-->
+    </main>
+
+    <aside class="rail rail-right"><!--@rail right--><div class="rail-inner"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box rect"><span>Ad slot</span><span>300 × 250</span></div></div><section class="rail-card"><h2>Popular tools</h2><ol><li><a href="../tools/gst-calculator.html"><span>GST Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/emi-calculator.html"><span>EMI Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/income-tax-calculator.html"><span>Income Tax Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/sip-calculator.html"><span>SIP Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/ppf-calculator.html"><span>PPF Calculator</span><span aria-hidden="true">→</span></a></li></ol></section><div class="rail-sticky"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box tall"><span>Ad slot</span><span>300 × 600</span></div></div></div></div><!--/@rail--></aside>
+  </div>
+
+<!--@footer--><footer class="site-footer"><div class="wrap"><div><strong>ToolsWebsite</strong><br>Free tools that run in your browser. Your files never leave your device.</div><nav aria-label="Categories"><a href="../category/finance.html">Finance</a></nav><nav aria-label="Company"><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav><nav aria-label="Legal"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../disclaimer.html">Disclaimer</a></nav></div></footer><!--/@footer-->
+
+  <script src="age-calculator.js" defer></script>
+</body>
+</html>

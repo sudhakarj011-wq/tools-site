@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en" data-root="../" class="show-ad-placeholders">
+<head>
+<!--@head-->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#B45309">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://toolswebsite.in/tools/emi-calculator.html">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToolsWebsite">
+<meta property="og:locale" content="en_IN">
+<meta property="og:title" content="EMI Calculator: Home, Car &amp; Personal Loan EMI (Free)">
+<meta property="og:description" content="Free EMI calculator for home, car and personal loans. Enter the amount, interest rate and tenure to see monthly EMI, total interest and a yearly schedule.">
+<meta property="og:url" content="https://toolswebsite.in/tools/emi-calculator.html">
+<meta name="twitter:card" content="summary">
+<link rel="preload" href="../core/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../core/fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../core/design-system.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"EMI Calculator","url":"https://toolswebsite.in/tools/emi-calculator.html","description":"Free EMI calculator for home, car and personal loans. Enter the amount, interest rate and tenure to see monthly EMI, total interest and a yearly schedule.","applicationCategory":"FinanceApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"dateModified":"2026-10-20","inLanguage":"en"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is EMI calculated?","acceptedAnswer":{"@type":"Answer","text":"EMI = P × r × (1 + r)^n ÷ ((1 + r)^n − 1), where P is the loan amount, r is the monthly interest rate and n is the number of months. For ₹10,00,000 at 9% for 5 years, the EMI is ₹20,758.36."}},{"@type":"Question","name":"Does a longer tenure reduce my EMI?","acceptedAnswer":{"@type":"Answer","text":"Yes, a longer tenure lowers the monthly EMI, but you pay interest for more months, so the total interest is higher. A shorter tenure has a higher EMI and a lower total cost."}},{"@type":"Question","name":"Why is most of my early EMI interest?","acceptedAnswer":{"@type":"Answer","text":"Interest is charged on the outstanding balance, which is highest at the start. As you repay principal, the balance falls and so does the interest part of each EMI. The EMI itself stays the same."}},{"@type":"Question","name":"What is the difference between a flat rate and a reducing balance rate?","acceptedAnswer":{"@type":"Answer","text":"With a reducing balance rate, interest is charged only on the principal you still owe. With a flat rate, interest is charged on the original loan amount for the entire tenure, so the same quoted rate costs much more. Compare offers by EMI and total repayment."}},{"@type":"Question","name":"Will the EMI on my loan match this calculator exactly?","acceptedAnswer":{"@type":"Answer","text":"It should be very close for a fixed-rate loan. Your lender may add processing fees, insurance or GST on fees, and may round amounts differently. On a floating-rate loan the EMI or the tenure changes when the lender's rate changes."}},{"@type":"Question","name":"Is my data sent to a server?","acceptedAnswer":{"@type":"Answer","text":"No. This calculator runs entirely in your browser. The amounts you enter are never uploaded or stored."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toolswebsite.in/"},{"@type":"ListItem","position":2,"name":"Finance","item":"https://toolswebsite.in/category/finance.html"},{"@type":"ListItem","position":3,"name":"EMI Calculator","item":"https://toolswebsite.in/tools/emi-calculator.html"}]}</script>
+<!--/@head-->
+<title>EMI Calculator: Home, Car &amp; Personal Loan EMI (Free)</title>
+<meta name="description" content="Free EMI calculator for home, car and personal loans. Enter the amount, interest rate and tenure to see monthly EMI, total interest and a yearly schedule.">
+</head>
+<body>
+<!--@header--><header class="site-header"><div class="wrap"><a class="logo" href="../index.html">Tools<span>Website</span></a><nav class="site-nav" aria-label="Main"><a href="../index.html#all-tools">All Tools</a><a href="../index.html#all-tools" data-cat="pdf-image" class="hide-sm">PDF &amp; Image</a><a href="../category/finance.html" class="active" aria-current="page">Finance</a><a href="../index.html#all-tools" data-cat="dev" class="hide-sm">Dev Tools</a></nav></div></header><!--/@header-->
+
+  <div class="wrap layout">
+    <aside class="rail rail-left"><!--@rail left--><div class="rail-sticky" aria-label="Advertisement"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box sky"><span>Ad slot</span><span>160 × 600</span></div></div></div><!--/@rail--></aside>
+
+    <main>
+    <!--@crumbs--><nav class="crumbs" aria-label="Breadcrumb"><a href="../index.html">Home</a> › <a href="../category/finance.html">Finance</a> › EMI Calculator</nav><!--/@crumbs-->
+
+    <header class="tool-head">
+      <h1>EMI Calculator</h1>
+      <p class="lede">Work out the monthly EMI for a home, car or personal loan. See the total interest you will pay and how each year's payment splits between principal and interest.</p>
+    </header>
+
+    <!-- ── Tool widget (above the fold) ── -->
+    <section class="widget" aria-label="EMI calculator">
+      <div class="field" id="amount-wrap">
+        <label for="amount">Loan amount (₹)</label>
+        <input id="amount" type="number" inputmode="decimal" min="1" step="any" value="1000000">
+        <span class="field-note" id="amount-words" aria-live="polite"></span>
+        <input id="amount-r" class="range" type="range" min="100000" max="20000000" step="50000" value="1000000" aria-label="Loan amount slider">
+      </div>
+      <div class="row">
+        <div class="field" id="rate-wrap">
+          <label for="rate">Interest rate (% per year)</label>
+          <input id="rate" type="number" inputmode="decimal" min="0" max="60" step="0.05" value="9">
+          <input id="rate-r" class="range" type="range" min="1" max="30" step="0.1" value="9" aria-label="Interest rate slider">
+        </div>
+        <div class="field" id="tenure-wrap">
+          <label for="tenure" id="tenure-l">Loan tenure (years)</label>
+          <input id="tenure" type="number" inputmode="numeric" min="1" step="1" value="5">
+          <input id="tenure-r" class="range" type="range" min="1" max="30" step="1" value="5" aria-label="Loan tenure slider">
+        </div>
+      </div>
+      <div class="field" id="unit-wrap">
+        <span class="label" id="unit-l">Tenure unit</span>
+        <div class="seg" id="unit" role="group" aria-labelledby="unit-l">
+          <button type="button" data-v="years" aria-pressed="true">Years</button>
+          <button type="button" data-v="months" aria-pressed="false">Months</button>
+        </div>
+      </div>
+      <p class="hint" id="hint" role="alert" hidden>Enter a loan amount, a rate up to 60% and a whole-number tenure of up to 50 years (600 months).</p>
+      <div class="result" id="out" aria-live="polite" hidden></div>
+      <div class="widget-foot">
+        <p class="privacy-note">Calculated in your browser. Nothing you type is uploaded.</p>
+        <button type="button" class="btn btn-ghost" id="copy">Copy result</button>
+      </div>
+    </section>
+
+    <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+    <!-- ── Blog article ── -->
+    <article class="article">
+      <h2>What is an EMI?</h2>
+      <p>EMI stands for Equated Monthly Instalment. It is the fixed amount you pay your bank or lender every month until a loan is fully repaid. Each EMI has two parts: a share that repays the money you borrowed (the principal) and a share that pays the lender's interest. The total of the two stays the same every month, which makes a loan easy to plan around.</p>
+      <p>The split inside the EMI changes over time. At the start the outstanding balance is large, so most of the EMI goes towards interest. As the balance falls, interest takes less and principal takes more. For a ₹10,00,000 loan at 9% a year, the first EMI of ₹20,758 is made up of ₹7,500 interest and ₹13,258 principal. By the last month almost the entire EMI is principal.</p>
+
+      <h2>How to use this EMI calculator</h2>
+      <p>Three quick steps give you the EMI, the total cost of the loan and a year-by-year breakup. Each step below shows what you will see on the calculator above.</p>
+
+      <h3>Step 1: Enter the loan amount and interest rate</h3>
+      <p>Type the amount you plan to borrow in rupees, or drag the slider. The calculator also writes the amount in lakh or crore underneath, which helps you spot a missing zero. Then enter the annual interest rate your bank has quoted. Use the rate from the sanction letter or the lender's website, not a guess.</p>
+      <figure class="shot">
+        <img src="img/emi-calculator-step1.webp" width="732" height="832" loading="lazy" alt="EMI calculator with loan amount 10,00,000 rupees and interest rate 9 percent highlighted">
+        <figcaption>Loan amount ₹10,00,000 (10 Lakh) at 9% a year.</figcaption>
+      </figure>
+
+      <h3>Step 2: Choose the loan tenure</h3>
+      <p>Enter the repayment period. It is in years by default. Switch to <strong>Months</strong> if your loan is quoted that way, for example 18 or 30 months. Home loans commonly run 15 to 30 years, car loans 3 to 7 years and personal loans 1 to 5 years.</p>
+      <figure class="shot">
+        <img src="img/emi-calculator-step2.webp" width="732" height="832" loading="lazy" alt="EMI calculator with loan tenure of 5 years and the Years and Months toggle highlighted">
+        <figcaption>Tenure of 5 years. Use the toggle to enter months instead.</figcaption>
+      </figure>
+
+      <h3>Step 3: Read your EMI and the total cost</h3>
+      <p>The monthly EMI appears at the top. Below it you see the principal, the total interest over the life of the loan and the total amount you will repay. The coloured bar shows what share of your total payment is interest. Use <strong>Copy result</strong> to paste the summary into a message or a spreadsheet.</p>
+      <figure class="shot">
+        <img src="img/emi-calculator-step3.webp" width="732" height="832" loading="lazy" alt="EMI result showing monthly EMI 20,758 rupees, total interest 2,45,501 rupees and total payment 12,45,501 rupees">
+        <figcaption>₹10 lakh at 9% for 5 years: EMI ₹20,758, total interest ₹2,45,501.</figcaption>
+      </figure>
+
+      <h3>Optional: open the year-by-year schedule</h3>
+      <p>Select <strong>Show year-by-year schedule</strong> to see how much principal and interest you pay in each year and how much of the loan is still outstanding at the end of it. It is useful when you plan a part-payment or want to know the balance after a few years.</p>
+      <figure class="shot">
+        <img src="img/emi-calculator-step4.webp" width="732" height="1068" loading="lazy" alt="Year-by-year loan schedule table showing principal paid, interest paid and balance for each of five years">
+        <figcaption>The yearly schedule: principal paid rises while interest paid falls.</figcaption>
+      </figure>
+
+      <h2>EMI formula</h2>
+      <div class="formula">EMI = P × r × (1 + r)<sup>n</sup> ÷ ((1 + r)<sup>n</sup> − 1)</div>
+      <p>Here <strong>P</strong> is the loan amount, <strong>r</strong> is the monthly interest rate (annual rate ÷ 12 ÷ 100) and <strong>n</strong> is the number of monthly instalments. If the interest rate is 0%, the formula is simply P ÷ n.</p>
+      <p>Worked example: P = ₹10,00,000, annual rate 9%, tenure 5 years. Then r = 9 ÷ 12 ÷ 100 = 0.0075 and n = 60. The factor (1.0075)<sup>60</sup> is about 1.5657, so EMI = 10,00,000 × 0.0075 × 1.5657 ÷ 0.5657 = ₹20,758.36.</p>
+
+      <h2>EMI examples for common loans</h2>
+      <table>
+        <thead><tr><th>Loan</th><th>Amount</th><th>Rate</th><th>Tenure</th><th>EMI</th><th>Total interest</th></tr></thead>
+        <tbody>
+          <tr><td>Home loan</td><td>₹50,00,000</td><td>8.5%</td><td>20 years</td><td>₹43,391</td><td>₹54,13,879</td></tr>
+          <tr><td>Car loan</td><td>₹8,00,000</td><td>9.5%</td><td>5 years</td><td>₹16,801</td><td>₹2,08,089</td></tr>
+          <tr><td>Personal loan</td><td>₹3,00,000</td><td>14%</td><td>3 years</td><td>₹10,253</td><td>₹69,118</td></tr>
+          <tr><td>Education loan</td><td>₹10,00,000</td><td>9%</td><td>5 years</td><td>₹20,758</td><td>₹2,45,501</td></tr>
+        </tbody>
+      </table>
+      <p>These are illustrations with sample rates. Your lender's actual rate depends on your credit score, the loan type and the lender.</p>
+
+      <h2>How tenure changes your EMI and total interest</h2>
+      <p>A longer tenure lowers the EMI but raises the interest you pay in total, because the balance stays outstanding for longer. The table below uses a ₹10,00,000 loan at 9%.</p>
+      <table>
+        <thead><tr><th>Tenure</th><th>EMI</th><th>Total interest</th><th>Total payment</th></tr></thead>
+        <tbody>
+          <tr><td>5 years</td><td>₹20,758</td><td>₹2,45,501</td><td>₹12,45,501</td></tr>
+          <tr><td>10 years</td><td>₹12,668</td><td>₹5,20,109</td><td>₹15,20,109</td></tr>
+          <tr><td>15 years</td><td>₹10,143</td><td>₹8,25,680</td><td>₹18,25,680</td></tr>
+          <tr><td>20 years</td><td>₹8,997</td><td>₹11,59,342</td><td>₹21,59,342</td></tr>
+        </tbody>
+      </table>
+      <p>Stretching the loan from 5 to 20 years cuts the EMI by more than half, but the interest grows from about ₹2.5 lakh to about ₹11.6 lakh. The interest rate matters just as much. On a ₹20,00,000 loan over 15 years, moving from 7.5% to 9.5% raises the EMI from ₹18,540 to ₹20,884 and the total interest from ₹13.4 lakh to ₹17.6 lakh. Even a small difference in rate is worth negotiating.</p>
+
+      <!--@ad inline--><div class="ad-inline"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box inline"><span>Ad slot</span><span>320 × 100</span></div></div></div><!--/@ad-->
+
+      <h2>Reducing balance and flat rate</h2>
+      <p>Most banks quote home, car and education loans on a <strong>reducing balance</strong>. Interest each month is charged only on the principal still owed, which is what this calculator uses. Some lenders and dealers quote a <strong>flat rate</strong>, where interest is charged on the full original amount for the whole tenure. A flat rate looks lower but costs more. A 9% flat rate on ₹10,00,000 for 5 years means an EMI of ₹24,167, compared with ₹20,758 at 9% reducing balance. To get the same EMI as that flat loan on a reducing balance, the rate would have to be about 15.7%. When two offers use different methods, compare the EMI and the total repayment, not the quoted rate.</p>
+
+      <p>Planning more than a loan? The <a data-tool="sip-calculator" href="../tools/sip-calculator.html">SIP Calculator</a> shows what a monthly investment can grow to, the <a data-tool="income-tax-calculator" href="../tools/income-tax-calculator.html">Income Tax Calculator</a> estimates your tax, and the <a data-tool="gst-calculator" href="../tools/gst-calculator.html">GST Calculator</a> splits tax out of a bill.</p>
+
+      <h2>Frequently asked questions</h2>
+      <details class="faq"><summary>How is EMI calculated?</summary>
+        <p>EMI = P × r × (1 + r)^n ÷ ((1 + r)^n − 1), where P is the loan amount, r is the monthly interest rate and n is the number of months. For ₹10,00,000 at 9% for 5 years, the EMI is ₹20,758.36.</p></details>
+      <details class="faq"><summary>Does a longer tenure reduce my EMI?</summary>
+        <p>Yes, a longer tenure lowers the monthly EMI, but you pay interest for more months, so the total interest is higher. A shorter tenure has a higher EMI and a lower total cost.</p></details>
+      <details class="faq"><summary>Why is most of my early EMI interest?</summary>
+        <p>Interest is charged on the outstanding balance, which is highest at the start. As you repay principal, the balance falls and so does the interest part of each EMI. The EMI itself stays the same.</p></details>
+      <details class="faq"><summary>What is the difference between a flat rate and a reducing balance rate?</summary>
+        <p>With a reducing balance rate, interest is charged only on the principal you still owe. With a flat rate, interest is charged on the original loan amount for the entire tenure, so the same quoted rate costs much more. Compare offers by EMI and total repayment.</p></details>
+      <details class="faq"><summary>Will the EMI on my loan match this calculator exactly?</summary>
+        <p>It should be very close for a fixed-rate loan. Your lender may add processing fees, insurance or GST on fees, and may round amounts differently. On a floating-rate loan the EMI or the tenure changes when the lender's rate changes.</p></details>
+      <details class="faq"><summary>Is my data sent to a server?</summary>
+        <p>No. This calculator runs entirely in your browser. The amounts you enter are never uploaded or stored.</p></details>
+
+      <p class="privacy-note"><strong>Disclaimer:</strong> This calculator gives estimates for convenience and is not financial advice. Check final figures with your lender. See our <a href="../disclaimer.html">disclaimer</a>.</p>
+    </article>
+
+    <!--@related--><section class="related-wrap"><h2 class="section-title">Related tools</h2><div class="related"><a class="tool-card" href="../tools/gst-calculator.html"><span class="ic">💸</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>GST Calculator</h3><p>Calculate GST (5%, 12%, 18%, 28%) on any amount instantly. Inclusive &amp; exclusive.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/income-tax-calculator.html"><span class="ic">📋</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Income Tax Calculator</h3><p>Compare income tax under the old and new regime for FY 2026-27 and see which saves more.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/sip-calculator.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>SIP Calculator</h3><p>Calculate returns on your Systematic Investment Plan (SIP). CAGR &amp; wealth gain.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/ppf-calculator.html"><span class="ic">🏦</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>PPF Calculator</h3><p>Calculate Public Provident Fund maturity amount with compounding interest.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/fd-calculator.html"><span class="ic">🏧</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>FD Calculator</h3><p>Calculate maturity amount and interest earned on Fixed Deposits.</p><span class="go">Open tool →</span></a><a class="tool-card" href="../tools/compound-interest.html"><span class="ic">📈</span><span class="chip" style="background:#10b9811A;color:#10b981">Finance</span><h3>Compound Interest Calculator</h3><p>Calculate compound interest with different compounding frequencies.</p><span class="go">Open tool →</span></a></div></section><!--/@related-->
+    </main>
+
+    <aside class="rail rail-right"><!--@rail right--><div class="rail-inner"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box rect"><span>Ad slot</span><span>300 × 250</span></div></div><section class="rail-card"><h2>Popular tools</h2><ol><li><a href="../tools/gst-calculator.html"><span>GST Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/emi-calculator.html"><span>EMI Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/income-tax-calculator.html"><span>Income Tax Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/sip-calculator.html"><span>SIP Calculator</span><span aria-hidden="true">→</span></a></li><li><a href="../tools/ppf-calculator.html"><span>PPF Calculator</span><span aria-hidden="true">→</span></a></li></ol></section><div class="rail-sticky"><div class="ad"><div class="ad-label">Advertisement</div><div class="ad-box tall"><span>Ad slot</span><span>300 × 600</span></div></div></div></div><!--/@rail--></aside>
+  </div>
+
+<!--@footer--><footer class="site-footer"><div class="wrap"><div><strong>ToolsWebsite</strong><br>Free tools that run in your browser. Your files never leave your device.</div><nav aria-label="Categories"><a href="../category/finance.html">Finance</a></nav><nav aria-label="Company"><a href="../about.html">About</a><a href="../contact.html">Contact</a></nav><nav aria-label="Legal"><a href="../privacy-policy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../disclaimer.html">Disclaimer</a></nav></div></footer><!--/@footer-->
+
+  <script src="emi-calculator.js" defer></script>
+</body>
+</html>

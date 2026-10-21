@@ -1,0 +1,10 @@
+{
+  "name": "ToolsWebsite",
+  "domain": "https://toolswebsite.in",
+  "domainConfirmed": false,
+  "contactEmail": "",
+  "locale": "en_IN",
+  "themeColor": "#B45309",
+  "showAdPlaceholders": true,
+  "hubMinTools": 3
+}
